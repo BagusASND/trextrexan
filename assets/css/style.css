@@ -1,0 +1,28 @@
+.dashboard .ic-btn{
+    height: 20px;
+    width: auto;
+    margin-right: 3px;
+}
+.dashboard .main-header .status-group{
+    position: absolute;
+    padding: 18px 10px;
+}
+.dashboard .article-headline .art-title{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+.dashboard .article-headline .art-body{
+    text-align: justify;
+    line-height: 16px;
+}
+
+@media (min-width: 768px){
+    .navbar-nav>li>a.logout-btn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+}
