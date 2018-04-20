@@ -300,6 +300,11 @@
     background-color: transparent!important;
 }
 
+/*Form*/
+.form-horizontal .control-label{
+    text-align: left;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a {
         padding-top: 24px;
