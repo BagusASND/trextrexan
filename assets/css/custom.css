@@ -295,6 +295,12 @@
 
 .text-strong{font-weight: bold!important;}
 .text-medium{font-size: 12px;}
+.text-success{color: #47CD6B;}
+
+.card{
+    border: solid 1px #eee;
+    margin-bottom: 20px;
+}
 
 .navbar-nav>li>a:hover {
     background-color: transparent!important;
