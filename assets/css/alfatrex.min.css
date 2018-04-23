@@ -168,7 +168,7 @@ h6,
 }
 
 a {
-    color: #3c8dbc
+    color: #2296F3
 }
 
 a:hover,
@@ -3714,12 +3714,12 @@ table.text-center th {
 
 .login-page,
 .register-page {
-    background: #d2d6de
+    background: #F4F5FA
 }
 
 .login-box,
 .register-box {
-    width: 360px;
+    width: 398px;
     margin: 7% auto
 }
 
@@ -3734,7 +3734,7 @@ table.text-center th {
 .login-box-body,
 .register-box-body {
     background: #fff;
-    padding: 20px;
+    padding: 30px 20px 50px 20px;
     border-top: 0;
     color: #666
 }

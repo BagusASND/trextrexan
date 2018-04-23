@@ -113,6 +113,10 @@
     border-radius: 20px;
 }
 
+.login-box-body .arrow-back{
+    color: #414141;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a.logout-btn {
         padding-top: 20px;
