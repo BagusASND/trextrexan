@@ -62,7 +62,6 @@
     width: 100%;
     height: 43px;
     padding: 0 0 0 25px;
-    color: #2296f3;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: .03em;
@@ -77,6 +76,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.stepNav li.selected a {
+    color: #2296f3;
+}
+.stepNav a {
+    color: #dddddf;
 }
 .stepNav li:first-child a {
     padding-left: 12px;
@@ -107,9 +112,6 @@
 .stepNav a:hover {
     color: #2296f3;
 }
-.stepNav a:hover:before {
-
-}
 .stepNav li.selected {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -119,13 +121,89 @@
     border-right: 3px solid #2296f3;
     border-bottom: 3px solid #2296f3;
 }
-.rounder {
+.stepNav li .rounder {
     color: #fff;
     font-weight: 300;
-    background-color: #2296f3;
+    background-color: #dddddf;
     padding: 2px 8px;
     margin-right: 20px;
     border-radius: 20px;
+}
+.stepNav li.selected .rounder, .stepNav a:hover .rounder {
+    background-color: #2296f3;
+}
+.stepNav li.selected:hover .rounder, .stepNav a:hover .rounder {
+    background-color: rgba(34, 150, 243, .75);
+}
+.stepNav li.selected a:hover {
+    color: rgba(34, 150, 243, .75);
+}
+.ship-round-around {
+    border: 1px solid #dddddf;
+    border-radius: 4px;
+    width: 30%;
+    padding: 35px;
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+}
+.ship-img {
+    width: 255px;
+}
+.ship-wrapper {
+    text-align:center;
+}
+.ship-wrapper figcaption{
+    max-width: 135px;
+    margin: 10px auto;
+    letter-spacing: .02em;
+}
+.ship-wrapper .btn-secondary {
+    font-weight: 400;
+    border: 0;
+    width: 95px;
+    height: 35px;
+    line-height: 24px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right: 13px;
+    margin-left: 7px;
+}
+.dt-wrapper {
+    float: right;
+}
+.dt-wrapper .fa-calendar {
+    font-size: 1.4em;
+}
+.dt-wrapper .fa-clock-o {
+    font-size: 1.7em;
+    vertical-align: sub;
+}
+.ship-2label-format {
+    font-size: 1.5em;
+    padding-top: 3px;
+}
+.ship-2label-format + .input-group .input-group-addon {
+    background-color: #d8d8d8;
+}
+.ship-2label-format + .input-group:hover .input-group-addon {
+    background-color: #fff;
+}
+.truck-icon {
+    background-image: url(../img/new/ic-pengirim-white.png);
+    background-position: center;
+    padding: 4px 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ship-2label-format + .input-group:hover .truck-icon {
+    background-image: url(../img/new/ic-pengirim-grey.png);
 }
 
 .login-box-body .arrow-back{
