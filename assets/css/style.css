@@ -21,6 +21,11 @@
 .breadcrumb {
     border-radius: 0;
 }
+.header-title{
+    position: absolute;
+    margin-left: 15px;
+    color: #ffffff;
+}
 .stepNav {
     margin: 5px 0;
     height: 43px;
@@ -152,6 +157,10 @@
     float:none;
     margin-right: 13px;
     margin-left: 7px;
+}
+
+.login-box-body .arrow-back{
+    color: #414141;
 }
 
 @media (min-width: 768px){

@@ -150,6 +150,16 @@
     color: #ffffff;
     background-color: #2472c5;
 }
+.btn-secondary-outline{
+    background-color: transparent;
+    color: #2296f3;
+    border: solid 1px #2296f3;
+    font-weight: 700;
+}
+.btn-secondary-outline:hover{
+    background-color: #2296F3;
+    color: #ffffff;
+}
 .btn-rounded{
     border-radius: 30px;
 }
@@ -314,14 +324,81 @@
 
 .text-strong{font-weight: bold!important;}
 .text-medium{font-size: 12px;}
+.text-success{color: #47CD6B;}
+
+.card{
+    border: solid 1px #eee;
+    margin-bottom: 20px;
+}
 
 .navbar-nav>li>a:hover {
     background-color: transparent!important;
 }
 
 /*Form*/
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder{
+    font-style: italic;
+}
+.form-control:disabled{
+    border: none;
+}
+textarea{
+    resize: none;
+}
 .form-horizontal .control-label{
     text-align: left;
+}
+
+.form-flat .form-control{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.form-flat .form-control-feedback{
+    left: 0;
+}
+.form-flat .form-control{
+    padding-left: 42.5px;
+    padding-right: 12px;
+}
+
+
+/*Alert*/
+
+.alert-has-sign{
+    padding-left: 60px;
+    position: relative;
+}
+.alert-has-sign .sign-addon{
+    position: absolute;
+    background-color: #FF5722;
+    color: #ffffff;
+    left: -1px;
+    width: 39px;
+    padding: 14px 0;
+    top: -1px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 3px 0 0 3px;
+}
+.alert-has-sign .sign-addon:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #FF5722;
+    right: -4px;
+    top: 22px;
+    transform: rotate(45deg);
+}
+.alert-danger.alert-has-sign{
+    background-color: #FBE9E7!important;
+    color: #AE5054!important;
+    border-color: #FF5722;
+}
+.alert-has-sign .close{
+    color: #AE5054!important;
 }
 
 @media (min-width: 768px){
