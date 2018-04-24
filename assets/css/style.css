@@ -154,7 +154,7 @@
     text-align:center;
 }
 .ship-wrapper figcaption{
-    max-width: 135px;
+    max-width: 140px;
     margin: 10px auto;
     letter-spacing: .02em;
 }
@@ -202,9 +202,9 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.ship-2label-format + .input-group:hover .truck-icon {
-    background-image: url(../img/new/ic-pengirim-grey.png);
-}
+/*.ship-2label-format + .input-group:hover .truck-icon {*/
+    /*background-image: url(../img/new/ic-pengirim-grey.png);*/
+/*}*/
 
 .login-box-body .arrow-back{
     color: #414141;
