@@ -131,6 +131,16 @@
     color: #ffffff;
     background-color: #2472c5;
 }
+.btn-secondary-outline{
+    background-color: transparent;
+    color: #2296f3;
+    border: solid 1px #2296f3;
+    font-weight: 700;
+}
+.btn-secondary-outline:hover{
+    background-color: #2296F3;
+    color: #ffffff;
+}
 .btn-rounded{
     border-radius: 30px;
 }
@@ -307,6 +317,15 @@
 }
 
 /*Form*/
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder{
+    font-style: italic;
+}
+.form-control:disabled{
+    border: none;
+}
+textarea{
+    resize: none;
+}
 .form-horizontal .control-label{
     text-align: left;
 }

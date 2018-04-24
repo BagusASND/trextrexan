@@ -21,6 +21,11 @@
 .breadcrumb {
     border-radius: 0;
 }
+.header-title{
+    position: absolute;
+    margin-left: 15px;
+    color: #ffffff;
+}
 .stepNav {
     margin: 5px 0;
     height: 43px;

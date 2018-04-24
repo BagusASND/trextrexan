@@ -3736,7 +3736,8 @@ table.text-center th {
     background: #fff;
     padding: 30px 20px 50px 20px;
     border-top: 0;
-    color: #666
+    color: #666;
+    box-shadow: 0 2px 5px #909090;
 }
 
 .login-box-body .form-control-feedback,
