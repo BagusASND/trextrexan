@@ -210,6 +210,30 @@
     color: #414141;
 }
 
+.tab-button{
+    border-bottom: none;
+}
+.tab-button>li>a{
+    padding: 0;
+}
+.tab-button>li.active>a{
+    background-color: transparent;
+}
+.tab-button>li.active>a>button{
+    background-color: #2296F3;
+    border-color: #2296f3;
+    color: #ffffff;
+}
+.tab-button>li>a>button>i{
+    display: none;
+}
+.tab-button>li.active>a>button>i{
+    display: inline-block;
+}
+.tab-button>li.active>a>button>img{
+    display: none;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a.logout-btn {
         padding-top: 20px;
