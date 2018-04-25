@@ -234,6 +234,13 @@
     display: none;
 }
 
+.cust-group .radio-primary input[type="radio"] + label::after{
+    top: 15px;
+}
+.cust-group .radio-primary input[type="radio"] + label::before{
+    top: 12px;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a.logout-btn {
         padding-top: 20px;
