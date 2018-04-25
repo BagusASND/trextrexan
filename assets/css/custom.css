@@ -139,7 +139,7 @@
 /*Button*/
 
 .btn-default{
-    border: none;
+    border: solid 1px #f4f4f4;
     font-weight: bold;
 }
 .btn-primary{

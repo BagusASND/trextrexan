@@ -168,7 +168,8 @@ h6,
 }
 
 a {
-    color: #2296F3
+    color: #2296F3;
+    cursor: pointer
 }
 
 a:hover,
