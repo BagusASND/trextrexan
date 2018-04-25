@@ -207,26 +207,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="col-xs-3 control-label">Kontak Person 2</label>
-                                <div class="col-xs-7">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <input type="text" class="form-control" placeholder="Nama">
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <input type="email" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <input type="text" class="form-control" placeholder="Telepon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <label class="col-xs-2 control-label"><a href=""><i class="fa fa-trash"></i> <u>Hapus</u></a></label>
+                            <div id="contentElement">
+
                             </div>
+                            <!-- /.box-body -->
                             <div class="form-group">
                                 <div class="col-xs-7 col-xs-offset-3">
-                                    <button class="btn btn-secondary-outline btn-sm"><i class="fa fa-plus-circle"></i> Tambah</button>
+                                    <span class="btn btn-secondary-outline btn-sm" onclick="addRow()"><i class="fa fa-plus-circle"></i> Tambah</span>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -253,9 +240,9 @@
                                     </div>
                                     <div class="col-xs-9 pt-10 pl-30">
                                         <div class="form-group">
-                                            <label for="pontaNo" class="col-xs-3 control-label">Nomor Ponta</label>
+                                            <label for="pontaNo1" class="col-xs-3 control-label">Nomor Ponta</label>
                                             <div class="col-xs-7">
-                                                <input type="text" class="form-control" id="pontaNo" value="9990 0100 3357 7400">
+                                                <input type="text" class="form-control" id="pontaNo1" value="9990 0100 3357 7400">
                                             </div>
                                             <label class="col-xs-2 control-label"><a href=""><i class="fa fa-trash"></i> <u>Hapus</u></a></label>
                                         </div>
@@ -284,9 +271,9 @@
                                     </div>
                                     <div class="col-xs-9 pt-10 pl-30">
                                         <div class="form-group">
-                                            <label for="pontaNo" class="col-xs-3 control-label">Nomor Ponta</label>
+                                            <label for="pontaNo2" class="col-xs-3 control-label">Nomor Ponta</label>
                                             <div class="col-xs-7">
-                                                <input type="text" class="form-control" id="pontaNo" value="9990 0100 3357 7400">
+                                                <input type="text" class="form-control" id="pontaNo2" value="9990 0100 3357 7400">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -343,6 +330,31 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
+    function addRow() {
+        var div = document.createElement('div');
+
+        div.className = 'form-group';
+
+        div.innerHTML =
+                '<label class="col-xs-3 control-label">Kontak Person 2</label>' +
+                '<div class="col-xs-7"><div class="row"><div class="col-xs-4"><input type="text" class="form-control" placeholder="Nama"></div><div class="col-xs-4"><input type="email" class="form-control" placeholder="Email"></div><div class="col-xs-4"><input type="text" class="form-control" placeholder="Telepon"></div></div></div>' +
+                '<label class="col-xs-2 control-label" onclick="removeRow(this)"><a><i class="fa fa-trash"></i> <u>Hapus</u></a></label>';
+
+        document.getElementById('contentElement').appendChild(div);
+    }
+
+    function removeRow(input) {
+        document.getElementById('contentElement').removeChild(input.parentNode);
+    }
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
