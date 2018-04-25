@@ -186,25 +186,82 @@
     vertical-align: sub;
 }
 .ship-2label-format {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-top: 3px;
 }
 .ship-2label-format + .input-group .input-group-addon {
     background-color: #d8d8d8;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
-.ship-2label-format + .input-group:hover .input-group-addon {
-    background-color: #fff;
+.ship-2label-format + .input-group .bootstrap-select.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    height: 40px;
+    background-color: transparent;
 }
-.truck-icon {
-    background-image: url(../img/new/ic-pengirim-white.png);
+.ship-2label-format .btn-secondary-outline {
+    font-weight: 500;
+}
+/*.ship-2label-format + .input-group {*/
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);*/
+    /*box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);*/
+/*}*/
+.ship-2label-format + .input-group .bs-searchbox {
+    padding: 0;
+}
+.ship-2label-format + .input-group .bs-searchbox > input {
+    height: 40px;
+}
+.ship-2label-format + .input-group .dropdown-menu {
+    padding: 0;
+    margin-top: 10px;
+    border-color: #2296f3;
+}
+.ship-2label-format + .input-group .bs-searchbox:before {
+    font-family: FontAwesome;
+    content: "\f002";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    color: #d8d8d8;
+}
+.ship-2label-format + .input-group .btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.ship-2label-format + .input-group .bootstrap-select > .btn-default {
+    border: solid 1px #ccc;
+    font-weight: 400;
+}
+.ship-2label-format + .input-group .bootstrap-select.btn-group .dropdown-menu li a {
+    height: 40px;
+    line-height: 35px;
+}
+/*.ship-2label-format + .input-group:hover .input-group-addon {*/
+    /*background-color: #fff;*/
+/*}*/
+/*.ship-2label-format + .input-group:hover .truck-icon {*/
+/*background-image: url(../img/new/ic-pengirim-grey.png);*/
+/*}*/
+.truck-icon, .house-icon {
     background-position: center;
     padding: 4px 20px;
     background-repeat: no-repeat;
     background-size: contain;
 }
-/*.ship-2label-format + .input-group:hover .truck-icon {*/
-    /*background-image: url(../img/new/ic-pengirim-grey.png);*/
-/*}*/
+.truck-icon {
+    background-image: url(../img/new/ic-pengirim-white.png);
+}
+.house-icon {
+    background-image: url(../img/new/ic-rumah-white.png);
+}
+
 
 .login-box-body .arrow-back{
     color: #414141;
