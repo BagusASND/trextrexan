@@ -158,6 +158,9 @@
     color: #ffffff;
     background-color: #2472c5;
 }
+.btn-secondary:focus{
+    color: #ffffff;
+}
 .btn-secondary-outline{
     background-color: transparent;
     color: #2296f3;
@@ -167,6 +170,18 @@
 .btn-secondary-outline:hover{
     background-color: #2296F3;
     color: #ffffff;
+}
+.btn-default-outline{
+    background-color: transparent;
+    color: #848282;
+    border: solid 1px #848282;
+    font-weight: bold;
+}
+.btn-default-outline:hover{
+    color: #848282;
+}
+.btn-default-outline:focus{
+    color: #848282;
 }
 .btn-rounded{
     border-radius: 30px;
