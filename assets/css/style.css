@@ -19,7 +19,6 @@
     -webkit-box-orient: vertical;
 }
 .dashboard .article-headline .art-body{
-    text-align: justify;
     line-height: 16px;
     height: 64px;
     overflow: hidden;
