@@ -99,6 +99,10 @@
 .display-block {
     display: block;
 }
+.border-gray-1px {
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+}
 
 /*Typography*/
 .text-blue {
@@ -112,6 +116,9 @@
 }
 .ls-02 {
     letter-spacing: .02em;
+}
+.fs-13px {
+    font-size: 13px;
 }
 .fw-500 {
     font-weight: 500;
