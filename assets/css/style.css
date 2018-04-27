@@ -322,6 +322,10 @@
     color: #666;
     font-size: 30px;
 }
+.detail-paket .service-price .col-xs-3 {
+    width: 23%;
+    margin-right: 15px;
+}
 .detail-paket .img-service-price {
     width: 80px;
 }
@@ -366,32 +370,30 @@
 input[type="radio"]{
     position: absolute;
     right: 9000px;
+.detail-paket .service-eta {
+    font-size: 14px;
+    font-weight: 500;
 }
-input[type="radio"] + .label-text:before{
-    content: "\f10c";
-    font-family: "FontAwesome";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing:antialiased;
-    width: 1em;
-    display: inline-block;
-    margin-right: 5px;
+.detail-paket .service-eta-price {
+    line-height: 40px;
 }
-input[type="radio"]:checked + .label-text:before{
-    content: "\f192";
-    color: #8e44ad;
-    animation: effect 250ms ease-in;
+.detail-paket .service-eta.eta1 {
+    color: #f22928;
 }
-input[type="radio"]:disabled + .label-text{
-    color: #aaa;
+.detail-paket .service-eta.eta2 {
+    color: #075baf;
 }
-input[type="radio"]:disabled + .label-text:before{
-    content: "\f111";
-    color: #ccc;
+.detail-paket .service-eta.eta3 {
+    color: #66962d;
+}
+.detail-paket .service-eta.eta4 {
+    color: #feab06;
+}
+.detail-paket .total-harga {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9a9a9a;
 }
 
 @media (min-width: 768px){
