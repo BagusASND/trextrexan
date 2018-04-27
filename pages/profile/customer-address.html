@@ -38,7 +38,7 @@
     <header class="main-header">
 
         <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
+        <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="header-title">
                 <h3>Alamat Pelanggan / Penerima</h3>
             </div>
@@ -54,7 +54,7 @@
                     </li>
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
-                        <a href="../login/login.html" class="logout-btn"><img src="../../assets/img/new/ic-logout.PNG" data-toggle="tooltip" data-placement="bottom" title="Keluar"></a>
+                        <a href="../login/login.html" class="logout-btn"><img src="../../assets/img/new/ic-logout.PNG" class="ico-header" data-toggle="tooltip" data-placement="bottom" title="Keluar"></a>
                     </li>
                 </ul>
             </div>
@@ -160,38 +160,29 @@
                         <div role="tabpanel" class="tab-pane active" id="tab1">
                             <div class="row">
                                 <div class="col-xs-12 text-right">
-                                    <button class="btn btn-secondary" data-toggle="modal" data-target="#add-address"><i class="fa fa-plus-circle"></i> Tambah Alamat Pelanggan</button>
-                                    <button class="btn btn-secondary"><i class="fa fa-upload"></i> Mass Upload</button>
+                                    <button class="btn btn-secondary" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
+                                    <button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button>
                                 </div>
                                 <div class="col-xs-12">
                                     <table id="example2" class="table table-bordered table-hover">
                                         <thead>
                                         <tr>
-                                            <th>&nbsp;</th>
-                                            <th>Kode</th>
-                                            <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>Telepon</th>
-                                            <th>Group</th>
-                                            <th>&nbsp;</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>
+                                            <th>&nbsp;<br>
                                                 <div class="checkbox checkbox-primary">
                                                     <input id="t0" type="checkbox">
                                                     <label for="t0">
                                                     </label>
                                                 </div>
-                                            </td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button></td>
+                                            </th>
+                                            <th>Kode<br><input type="text" class="form-control"></th>
+                                            <th>Nama<br><input type="text" class="form-control"></th>
+                                            <th>Alamat<br><input type="text" class="form-control"></th>
+                                            <th>Telepon<br><input type="text" class="form-control"></th>
+                                            <th>Group<br><input type="text" class="form-control"></th>
+                                            <th>&nbsp;<br><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button></th>
                                         </tr>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">

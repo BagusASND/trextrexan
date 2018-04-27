@@ -89,7 +89,8 @@ body {
 .content-wrapper {
     min-height: 100%;
     background-color: #ecf0f5;
-    z-index: 800
+    z-index: 800;
+    margin-top: 68px;
 }
 
 .main-footer {
@@ -2499,7 +2500,8 @@ a:focus {
     border-radius: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    height: 43px;
 }
 
 .btn.uppercase {
