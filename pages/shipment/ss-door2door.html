@@ -32,7 +32,7 @@
     <header class="main-header">
 
         <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
+        <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="header-title">
                 <h3><i class="fa fa-angle-left mr-20"></i>Single Shipment</h3>
             </div>
@@ -48,7 +48,7 @@
                     </li>
                     <li class="dropdown user user-menu">
                         <!-- Menu Toggle Button -->
-                        <a href="#" class="logout-btn"><img src="../../assets/img/new/ic-logout.PNG" data-toggle="tooltip" data-placement="bottom" title="Keluar"></a>
+                        <a href="#" class="logout-btn"><img src="../../assets/img/new/ic-logout.PNG" data-toggle="tooltip" data-placement="bottom" title="Keluar" class="ico-header"></a>
                     </li>
                 </ul>
             </div>
@@ -328,37 +328,98 @@
                             </div>
                             <div class="row no-gutters service-price">
                                 <div class="col-xs-3 border-gray-1px">
-                                    <div class="form-group">
-                                        <div class="row no-gutters">
+                                    <div class="form-group mb-0">
+                                        <div class="row no-gutters pt-10 pb-5">
                                             <div class="col-xs-2">
-                                                <input type="radio" name="radio" checked>
-                                                <span class="label-text"></span>
+                                                <div class="radio radio-primary">
+                                                    <input type="radio" name="paket" id="radio1" value="option1">
+                                                    <label for="radio1" class="btn-block"></label>
+                                                </div>
                                             </div>
                                             <div class="col-xs-4 pl-0 pr-0">
                                                 <img src="../../assets/img/new/ic-sds-sm.png" class="img-service-price"/>
-                                                <span class="display-block text-center service-eta">1 Hari</span>
+                                                <span class="display-block text-center service-eta eta1">1 Hari</span>
                                             </div>
                                             <div class="col-xs-6">
-                                                <span>Rp 0</span>
+                                                <span class="fw-500 service-eta-price pl-20">Rp 0</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
-                                    <div class="form-group">
-                                        <div class="custom-radio radio-inline">
-                                            <input name="radio" value="2" id="radio2" type="radio">
-                                            <img src="../../assets/img/new/ic-sds-sm.png"/>
-                                            <label for="radio2">Rp 0</label>
+                                <div class="col-xs-3 border-gray-1px">
+                                    <div class="form-group mb-0">
+                                        <div class="row no-gutters pt-10 pb-5">
+                                            <div class="col-xs-2">
+                                                <div class="radio radio-primary">
+                                                    <input type="radio" name="paket" id="radio2" value="option2">
+                                                    <label for="radio2" class="btn-block"></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4 pl-0 pr-0">
+                                                <img src="../../assets/img/new/ic-nds-sm.png" class="img-service-price"/>
+                                                <span class="display-block text-center service-eta eta2">1-2 Hari</span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <span class="fw-500 service-eta-price pl-20">Rp 0</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
-
+                                <div class="col-xs-3 border-gray-1px">
+                                    <div class="form-group mb-0">
+                                        <div class="row no-gutters pt-10 pb-5">
+                                            <div class="col-xs-2">
+                                                <div class="radio radio-primary">
+                                                    <input type="radio" name="paket" id="radio3" value="option3">
+                                                    <label for="radio3" class="btn-block"></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4 pl-0 pr-0">
+                                                <img src="../../assets/img/new/ic-rgs-sm.png" class="img-service-price"/>
+                                                <span class="display-block text-center service-eta eta3">2-3 Hari</span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <span class="fw-500 service-eta-price pl-20">Rp 0</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-3">
-
+                                <div class="col-xs-3 border-gray-1px">
+                                    <div class="form-group mb-0">
+                                        <div class="row no-gutters pt-10 pb-5">
+                                            <div class="col-xs-2">
+                                                <div class="radio radio-primary">
+                                                    <input type="radio" name="paket" id="radio4" value="option4">
+                                                    <label for="radio4" class="btn-block"></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4 pl-0 pr-0">
+                                                <img src="../../assets/img/new/ic-ecs-sm.png" class="img-service-price"/>
+                                                <span class="display-block service-eta eta4">3+ Hari</span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <span class="fw-500 service-eta-price pl-20">Rp 0</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="ship-2label-format mt-40">
+                                <label class="fw-500">Total Biaya</label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control placeholder-normal fs-13px total-harga" id="total" placeholder="" value="0" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-action">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <button class="btn btn-secondary btn-lg">SUBMIT</button>
                             </div>
                         </div>
                     </div>
