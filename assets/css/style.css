@@ -5,7 +5,7 @@
 }
 .dashboard .main-header .status-group{
     position: absolute;
-    padding: 18px 10px;
+    padding: 13px 10px;
 }
 .dashboard .article-headline .art-title{
     font-size: 17px;
@@ -325,6 +325,43 @@
 .detail-paket .img-service-price {
     width: 80px;
 }
+
+.tab-button{
+    border-bottom: none;
+}
+.tab-button>li>a{
+    padding: 0;
+}
+.tab-button>li.active>a{
+    background-color: transparent;
+}
+.tab-button>li.active>a>button{
+    background-color: #2296F3;
+    border-color: #2296f3;
+    color: #ffffff;
+}
+.tab-button>li>a>button>i{
+    display: none;
+}
+.tab-button>li.active>a>button>i{
+    display: inline-block;
+}
+.tab-button>li.active>a>button>img{
+    display: none;
+}
+.tab-button>li>a>button>img{
+    width: 18px;
+}
+
+.cust-group .radio-primary input[type="radio"] + label::after{
+    top: 15px;
+}
+.cust-group .radio-primary input[type="radio"] + label::before{
+    top: 12px;
+}
+
+
+
 /*custom checkboxes shipment*/
 input[type="radio"]{
     position: absolute;
