@@ -265,6 +265,10 @@ aside.main-sidebar{
     height: 18px;
 }
 
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
 /*Padding*/
 .no-padding{padding: 0px!important;}
 .p-3{padding: 3px;}
@@ -509,14 +513,16 @@ textarea{
     height: 3.5em;
 }
 .float-label input:valid,
-.float-label input:focus {
+.float-label input:focus,
+.float-label input:disabled {
     padding: 20px 8px 5px 11px;
 }
 .float-label input:focus {
     background: #ffffff;
 }
 .float-label input:valid + label,
-.float-label input:focus + label {
+.float-label input:focus + label,
+.float-label input:disabled + label {
     color: #333;
     font-size: 11px;
     -webkit-transform: translate3d(0, -10px, 0);

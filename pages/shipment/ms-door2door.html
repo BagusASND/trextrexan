@@ -245,58 +245,90 @@
                                 <label class="fw-500">Detail Paket</label>
                                 <table class="table mt-10 mb-0">
                                     <tbody>
-                                        <tr>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12 pr-0">
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="isiPaket" placeholder="Isi Paket..." value="">
-                                                    </div>
+                                    <tr>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <div class="col-xs-12 pr-0">
+                                                    <fieldset class="float-label">
+                                                        <input name="isiPaket" id="isiPaket" type="text" class="form-control" required />
+                                                        <label for="isiPaket" class="fs-13px">Alamat</label>
+                                                    </fieldset>
                                                 </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12 pr-0">
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="berat" placeholder="Berat (Kg)" value="">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12 pr-0">
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="panjang" placeholder="Panjang (Cm)" value="">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12 pr-0">
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="lebar" placeholder="Lebar (Cm)" value="">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12 pr-0">
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="tinggi" placeholder="Tinggi (cm)" value="">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="no-padding">
-                                                <div class="form-group">
-                                                    <div class="col-xs-12">
-                                                        <label for="beratTertagih">Berat Tertagih</label>
-                                                        <input type="text" class="form-control placeholder-normal fs-13px" id="beratTertagih" placeholder="0 kg" value="" disabled>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <fieldset class="float-label">
+                                                    <input name="berat" id="berat" type="text" class="form-control" required />
+                                                    <label for="berat" class="fs-13px">Berat (Kg)</label>
+                                                </fieldset>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <fieldset class="float-label">
+                                                    <input name="panjang" id="panjang" type="text" class="form-control" required />
+                                                    <label for="panjang" class="fs-13px">Panjang (Cm)</label>
+                                                </fieldset>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <fieldset class="float-label">
+                                                    <input name="lebar" id="lebar" type="text" class="form-control" required />
+                                                    <label for="lebar" class="fs-13px">Lebar (Cm)</label>
+                                                </fieldset>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <fieldset class="float-label">
+                                                    <input name="tinggi" id="tinggi" type="text" class="form-control" required />
+                                                    <label for="tinggi" class="fs-13px">Tinggi (Cm)</label>
+                                                </fieldset>
+                                            </div>
+                                        </td>
+                                        <td class="no-padding">
+                                            <div class="form-group">
+                                                <fieldset class="float-label">
+                                                    <input name="beratTertagih" id="beratTertagih" type="text" class="form-control" value="0 Kg" disabled />
+                                                    <label for="beratTertagih" class="fs-13px">Berat Tertagih</label>
+                                                </fieldset>
+                                            </div>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
-                                <div class="checkbox checkbox-primary ml-5">
-                                    <input id="checkbox3" type="checkbox">
-                                    <label for="checkbox3">
-                                        Dengan Asuransi
-                                    </label>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="checkbox checkbox-primary ml-5">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">
+                                                Dengan Asuransi
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 show-asuransi mt-10">
+                                        <div class="row no-gutters">
+                                            <div class="col-xs-6">
+                                                <div class="form-group mb-0">
+                                                    <fieldset class="float-label">
+                                                        <input name="beratTertagih" id="beratTertagih" type="text" class="form-control" value="Rp. 1.000.000" />
+                                                        <label for="beratTertagih" class="fs-13px">Nilai Barang Asuransi</label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group mb-0">
+                                                    <fieldset class="float-label">
+                                                        <input name="beratTertagih" id="beratTertagih" type="text" class="form-control border-input-disabled" value="Rp. 100.000" disabled />
+                                                        <label for="beratTertagih" class="fs-13px">Nilai Premi Asuransi</label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="ship-2label-format mt-40">
@@ -465,6 +497,14 @@
             x.style.display = "block";
         }
     };
+    $(document).ready(function () {
+        $('#checkbox3').change(function () {
+            if (!this.checked)
+                $('.show-asuransi').fadeOut('3000');
+            else
+                $('.show-asuransi').fadeIn('3000');
+        });
+    });
 </script>
 </body>
 </html>

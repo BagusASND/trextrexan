@@ -100,12 +100,28 @@
 .stepNav li:first-child a {
     padding-left: 12px;
 }
-.stepNav a:before {
+.stepNav li.selected a:before, .stepNav li:hover a:before {
     content: "";
     width: 29px;
     height: 29px;
     border-right: 3px solid #2296f3;
     border-bottom: 3px solid #2296f3;
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -16px;
+    z-index: -1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.stepNav li a:before {
+    content: "";
+    width: 29px;
+    height: 29px;
+    border-right: 3px solid #dddddf;
+    border-bottom: 3px solid #dddddf;
     display: block;
     position: absolute;
     top: 6px;
@@ -156,7 +172,7 @@
     border: 1px solid #dddddf;
     border-radius: 4px;
     width: 30%;
-    padding: 35px;
+    padding: 10px;
     -webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
     box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
@@ -171,6 +187,7 @@
     max-width: 140px;
     margin: 10px auto;
     letter-spacing: .02em;
+    font-size: 12px;
 }
 .ship-wrapper .btn-secondary {
     font-weight: 400;
@@ -205,6 +222,9 @@
 .ship-2label-format {
     font-size: 1.4em;
     padding-top: 3px;
+}
+.ship-2label-format .float-label {
+    height: auto;
 }
 .ship-2label-format + .input-group .input-group-addon {
     background-color: #d8d8d8;
@@ -267,6 +287,29 @@
     height: 35px;
     font-size: 14px;
 }
+.ship-2label-format .show-asuransi {
+    display: none;
+    background-color: #F8F8F8;
+    padding: 10px 0;
+    width: 40%;
+}
+.ship-2label-format .show-asuransi > .row > .col-xs-6 {
+    padding: 0 25px;
+}
+.ship-2label-format .show-asuransi .form-group {
+    -margin-left: 0;
+    -margin-right: 0;
+}
+.ship-2label-format .show-asuransi .float-label input {
+    height: 50px;
+}
+.ship-2label-format .show-asuransi .form-control:disabled.border-input-disabled {
+    border: 1px solid #ccc;
+}
+.ship-2label-format .btn-secondary-outline:hover {
+    color: #2296f3;
+    background-color: transparent;
+}
 /*.ship-2label-format + .input-group:hover .input-group-addon {*/
     /*background-color: #fff;*/
 /*}*/
@@ -296,13 +339,13 @@
 .detail-paket table tr {
     height: 40px;
 }
-.detail-paket table tr td:last-child label {
-    font-size: 10px;
-    position: absolute;
-    top: 2px;
-    left: 26px;
-    opacity: .9;
-}
+/*.detail-paket table tr td:last-child label {*/
+    /*font-size: 10px;*/
+    /*position: absolute;*/
+    /*top: 2px;*/
+    /*left: 26px;*/
+    /*opacity: .9;*/
+/*}*/
 .detail-paket table {
     border-radius: 4px;
 }
