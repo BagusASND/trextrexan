@@ -296,10 +296,6 @@
 .ship-2label-format .show-asuransi > .row > .col-xs-6 {
     padding: 0 25px;
 }
-.ship-2label-format .show-asuransi .form-group {
-    -margin-left: 0;
-    -margin-right: 0;
-}
 .ship-2label-format .show-asuransi .float-label input {
     height: 50px;
 }
