@@ -478,6 +478,14 @@ textarea{
     left: 12px;
     font-weight: normal;
 }
+.input-has-label span{
+    position: absolute;
+    font-size: 11px;
+    color: #b3b2b2;
+    top: 5px;
+    left: 12px;
+    font-weight: normal;
+}
 .input-has-label .form-control{
     height: 50px;
     padding-top: 16px;

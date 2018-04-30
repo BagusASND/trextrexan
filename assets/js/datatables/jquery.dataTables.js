@@ -11381,7 +11381,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sNext": "Next",
+                "sNext": "<i class='fa fa-long-arrow-right'></i>",
 
 
                 /**
@@ -11404,7 +11404,7 @@
 				 *      } );
 				 *    } );
                  */
-                "sPrevious": "Previous"
+                "sPrevious": "<i class='fa fa-long-arrow-left'></i>"
             },
 
             /**
@@ -11459,7 +11459,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfo": "Tampil _START_ - _END_ dari _TOTAL_",
+            "sInfo": "Tampil _START_ - _END_ of _TOTAL_ entries",
 
 
             /**
