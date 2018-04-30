@@ -12,7 +12,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="../../assets/css/Ionicons/css/ionicons.min.css">
     <!-- DataTables Plugin -->
-    <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/jquery.dataTables.css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="../../assets/css/alfatrex.min.css">
 
@@ -163,12 +163,12 @@
                                     <button class="btn btn-secondary mr-2" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
                                     <button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button>
                                 </div>
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 mt-30">
 
                                     <table id="example" class="display nowrap" width="100%">
                                         <thead>
                                         <tr>
-                                            <th data-sortable="false">&nbsp;</th>
+                                            <th data-sortable="false" class="transparent">&nbsp;</th>
                                             <th>Kode</th>
                                             <th>Nama</th>
                                             <th>Alamat</th>
@@ -214,7 +214,7 @@
                                             <td>Edinburgh</td>
                                             <td>61</td>
                                             <td>2011/04/25</td>
-                                            <td>$3,120</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -228,7 +228,7 @@
                                             <td>Edinburgh</td>
                                             <td>63</td>
                                             <td>2011/07/25</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -242,7 +242,7 @@
                                             <td>Edinburgh</td>
                                             <td>22</td>
                                             <td>2012/03/29</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -256,7 +256,7 @@
                                             <td>Edinburgh</td>
                                             <td>33</td>
                                             <td>2008/11/28</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -270,7 +270,7 @@
                                             <td>New York</td>
                                             <td>61</td>
                                             <td>2012/12/02</td>
-                                            <td>$4,525</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -284,7 +284,7 @@
                                             <td>San Francisco</td>
                                             <td>59</td>
                                             <td>2012/08/06</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -298,7 +298,7 @@
                                             <td>Edinburgh</td>
                                             <td>55</td>
                                             <td>2010/10/14</td>
-                                            <td>$6,730</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -312,7 +312,7 @@
                                             <td>San Francisco</td>
                                             <td>39</td>
                                             <td>2009/09/15</td>
-                                            <td>$5,000</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -326,7 +326,7 @@
                                             <td>Edinburgh</td>
                                             <td>23</td>
                                             <td>2008/12/13</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -340,7 +340,7 @@
                                             <td>London</td>
                                             <td>30</td>
                                             <td>2008/12/19</td>
-                                            <td>$5,000</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -354,7 +354,7 @@
                                             <td>Edinburgh</td>
                                             <td>22</td>
                                             <td>2013/03/03</td>
-                                            <td>$4,200</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -368,7 +368,7 @@
                                             <td>San Francisco</td>
                                             <td>36</td>
                                             <td>2008/10/16</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -380,7 +380,7 @@
                                             <td>London</td>
                                             <td>43</td>
                                             <td>2012/12/18</td>
-                                            <td>$4,800</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -394,7 +394,7 @@
                                             <td>London</td>
                                             <td>19</td>
                                             <td>2010/03/17</td>
-                                            <td>$2,875</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -408,7 +408,7 @@
                                             <td>London</td>
                                             <td>66</td>
                                             <td>2012/11/27</td>
-                                            <td>$3,750</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -422,7 +422,7 @@
                                             <td>New York</td>
                                             <td>64</td>
                                             <td>2010/06/09</td>
-                                            <td>$5,000</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -436,7 +436,7 @@
                                             <td>New York</td>
                                             <td>59</td>
                                             <td>2009/04/10</td>
-                                            <td>$3,120</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -450,7 +450,7 @@
                                             <td>London</td>
                                             <td>41</td>
                                             <td>2012/10/13</td>
-                                            <td>$3,120</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -464,7 +464,7 @@
                                             <td>Edinburgh</td>
                                             <td>35</td>
                                             <td>2012/09/26</td>
-                                            <td>$4,200</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -476,7 +476,7 @@
                                             <td>New York</td>
                                             <td>30</td>
                                             <td>2011/09/03</td>
-                                            <td>$4,965</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -488,7 +488,7 @@
                                             <td>New York</td>
                                             <td>40</td>
                                             <td>2009/06/25</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -500,7 +500,7 @@
                                             <td>New York</td>
                                             <td>21</td>
                                             <td>2011/12/12</td>
-                                            <td>$4,965</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -514,7 +514,7 @@
                                             <td>Edinburgh</td>
                                             <td>23</td>
                                             <td>2010/09/20</td>
-                                            <td>$4,965</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -526,7 +526,7 @@
                                             <td>London</td>
                                             <td>36</td>
                                             <td>2009/10/09</td>
-                                            <td>$2,875</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -538,7 +538,7 @@
                                             <td>Edinburgh</td>
                                             <td>42</td>
                                             <td>2010/12/22</td>
-                                            <td>$4,525</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -552,7 +552,7 @@
                                             <td>London</td>
                                             <td>28</td>
                                             <td>2010/11/14</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -564,7 +564,7 @@
                                             <td>San Francisco</td>
                                             <td>18</td>
                                             <td>2011/06/07</td>
-                                            <td>$3,750</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -576,7 +576,7 @@
                                             <td>San Francisco</td>
                                             <td>48</td>
                                             <td>2010/03/11</td>
-                                            <td>$2,875</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -588,7 +588,7 @@
                                             <td>Edinburgh</td>
                                             <td>20</td>
                                             <td>2011/08/14</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -602,7 +602,7 @@
                                             <td>Edinburgh</td>
                                             <td>37</td>
                                             <td>2011/06/02</td>
-                                            <td>$3,750</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -614,7 +614,7 @@
                                             <td>London</td>
                                             <td>53</td>
                                             <td>2009/10/22</td>
-                                            <td>$2,875</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td><div class="checkbox checkbox-primary">
@@ -626,7 +626,7 @@
                                             <td>London</td>
                                             <td>27</td>
                                             <td>2011/05/07</td>
-                                            <td>$6,730</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -640,7 +640,7 @@
                                             <td>San Francisco</td>
                                             <td>22</td>
                                             <td>2008/10/26</td>
-                                            <td>$6,730</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -654,7 +654,7 @@
                                             <td>Edinburgh</td>
                                             <td>46</td>
                                             <td>2011/03/09</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -668,7 +668,7 @@
                                             <td>San Francisco</td>
                                             <td>47</td>
                                             <td>2009/12/09</td>
-                                            <td>$3,750</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -682,7 +682,7 @@
                                             <td>San Francisco</td>
                                             <td>51</td>
                                             <td>2008/12/16</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -696,7 +696,7 @@
                                             <td>San Francisco</td>
                                             <td>41</td>
                                             <td>2010/02/12</td>
-                                            <td>$4,200</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -710,7 +710,7 @@
                                             <td>San Francisco</td>
                                             <td>62</td>
                                             <td>2009/02/14</td>
-                                            <td>$4,965</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -724,7 +724,7 @@
                                             <td>London</td>
                                             <td>37</td>
                                             <td>2008/12/11</td>
-                                            <td>$4,200</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -738,7 +738,7 @@
                                             <td>New York</td>
                                             <td>65</td>
                                             <td>2008/09/26</td>
-                                            <td>$5,000</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -752,7 +752,7 @@
                                             <td>Edinburgh</td>
                                             <td>64</td>
                                             <td>2011/02/03</td>
-                                            <td>$4,965</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -766,7 +766,7 @@
                                             <td>London</td>
                                             <td>38</td>
                                             <td>2011/05/03</td>
-                                            <td>$4,200</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -780,7 +780,7 @@
                                             <td>Edinburgh</td>
                                             <td>37</td>
                                             <td>2009/08/19</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -794,7 +794,7 @@
                                             <td>New York</td>
                                             <td>61</td>
                                             <td>2013/08/11</td>
-                                            <td>$3,600</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -808,7 +808,7 @@
                                             <td>San Francisco</td>
                                             <td>47</td>
                                             <td>2009/07/07</td>
-                                            <td>$4,800</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -822,7 +822,7 @@
                                             <td>Edinburgh</td>
                                             <td>64</td>
                                             <td>2012/04/09</td>
-                                            <td>$6,730</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -836,7 +836,7 @@
                                             <td>New York</td>
                                             <td>63</td>
                                             <td>2010/01/04</td>
-                                            <td>$4,800</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -850,7 +850,7 @@
                                             <td>San Francisco</td>
                                             <td>56</td>
                                             <td>2012/06/01</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -864,7 +864,7 @@
                                             <td>Edinburgh</td>
                                             <td>43</td>
                                             <td>2013/02/01</td>
-                                            <td>$2,875</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -878,7 +878,7 @@
                                             <td>New York</td>
                                             <td>46</td>
                                             <td>2011/12/06</td>
-                                            <td>$4,800</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -892,7 +892,7 @@
                                             <td>London</td>
                                             <td>47</td>
                                             <td>2011/03/21</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -906,7 +906,7 @@
                                             <td>London</td>
                                             <td>21</td>
                                             <td>2009/02/27</td>
-                                            <td>$3,120</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -920,7 +920,7 @@
                                             <td>San Francisco</td>
                                             <td>30</td>
                                             <td>2010/07/14</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -934,7 +934,7 @@
                                             <td>Edinburgh</td>
                                             <td>51</td>
                                             <td>2008/11/13</td>
-                                            <td>$5,300</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -948,7 +948,7 @@
                                             <td>Edinburgh</td>
                                             <td>29</td>
                                             <td>2011/06/27</td>
-                                            <td>$4,080</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -962,7 +962,7 @@
                                             <td>New York</td>
                                             <td>27</td>
                                             <td>2011/01/25</td>
-                                            <td>$3,120</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
                                         </tr>
                                         </tbody>
                                     </table>
