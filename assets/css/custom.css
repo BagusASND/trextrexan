@@ -131,6 +131,9 @@ aside.main-sidebar{
 .fw-500 {
     font-weight: 500;
 }
+.fs-20{
+    font-size: 20px;
+}
 
 /*Border*/
 .no-border {
@@ -218,6 +221,9 @@ aside.main-sidebar{
 }
 .bg-secondary{
     background-color: #2296F3!important;
+}
+.cursor-pointer{
+    cursor: pointer;
 }
 
 /*Carousel*/
