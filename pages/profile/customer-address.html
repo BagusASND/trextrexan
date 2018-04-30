@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/jquery.dataTables.css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="../../assets/css/alfatrex.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-select.min.css">
 
     <link rel="stylesheet" href="../../assets/css/skins/skin-blue.min.css">
     <link rel="stylesheet" href="../../assets/css/custom.css">
@@ -148,8 +149,8 @@
             <div class="box box-solid box-transparent">
                 <div class="box-body text-right">
                     <ul class="nav nav-tabs pull-right tab-button" role="tablist">
-                        <li class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"><button class="btn btn-default-outline"><img src="../../assets/img/new/ic-group-grey.png" class="mr-10" alt=""><i class="fa fa-check-circle mr-10"></i> List Alamat Pelanggan</button></a></li>
-                        <li><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"><button class="btn btn-default-outline"><img src="../../assets/img/new/ic-list-grey.png" class="mr-10" alt=""><i class="fa fa-check-circle mr-10"></i> List Alamat Group</button></a></li>
+                        <li class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"><button class="btn btn-default-outline"><img src="../../assets/img/new/ic-group-grey.png" class="mr-10" alt=""><i class="fa fa-check-circle mr-10 fs-20"></i> List Alamat Pelanggan</button></a></li>
+                        <li><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"><button class="btn btn-default-outline"><img src="../../assets/img/new/ic-list-grey.png" class="mr-10" alt=""><i class="fa fa-check-circle mr-10 fs-20"></i> List Alamat Group</button></a></li>
                     </ul>
                 </div>
             </div>
@@ -163,7 +164,7 @@
                                     <button class="btn btn-secondary mr-2" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
                                     <button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button>
                                 </div>
-                                <div class="col-xs-12 mt-30">
+                                <div class="col-xs-12">
 
                                     <table id="example" class="display nowrap" width="100%">
                                         <thead>
@@ -177,7 +178,7 @@
                                             <th data-sortable="false">&nbsp;</th>
                                         </tr>
                                         <tr class="second">
-                                            <th style="padding: 8px 10px"></th>
+                                            <th></th>
                                             <th></th>
                                             <th></th>
                                             <th></th>
@@ -1131,13 +1132,19 @@
                                 </div>
                             </div>
                             <label><small>Alamat Toko Pickup</small></label>
-                            <div class="form-group">
-                                <div class="input-has-label">
-                                    <label>Kode Toko</label>
-                                    <select class="form-control">
-                                        <option value="">K12345</option>
-                                    </select>
-                                </div>
+                            <div class="form-group dropdown-select">
+                                <label>Kode Toko</label>
+                                <select class="selectpicker form-control" data-live-search="true">
+                                    <option data-tokens="K12345" data-content="<p class='no-margin text-strong'>K12345</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                        K12345
+                                    </option>
+                                    <option data-tokens="K12346" data-content="<p class='no-margin text-strong'>K12346</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                        K12346
+                                    </option>
+                                    <option data-tokens="K12347" data-content="<p class='no-margin text-strong'>K12347</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                        K12347
+                                    </option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <div class="input-has-label">
@@ -1227,6 +1234,8 @@
 <script src="../../assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->
 <script src="../../assets/js/datatables/jquery.dataTables.js"></script>
+<!-- Dropdown Select -->
+<script src="../../assets/js/bootstrap-select.min.js"></script>
 <!-- Alfatrex App -->
 <script src="../../assets/js/alfatrex.min.js"></script>
 

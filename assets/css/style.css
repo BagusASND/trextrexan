@@ -439,6 +439,31 @@
     top: 12px;
 }
 
+.form-group.dropdown-select{
+    position: relative;
+}
+.form-group.dropdown-select label{
+    position: absolute;
+    font-size: 11px;
+    color: #b3b2b2;
+    top: 5px;
+    left: 12px;
+    font-weight: normal;
+    z-index: 2;
+}
+.form-group.dropdown-select:hover label{
+    color: #b3b2b2;
+}
+.form-group.dropdown-select:focus label{
+    color: #b3b2b2;
+}
+.form-group.dropdown-select .bootstrap-select button{
+    height: 50px;
+    padding-top: 16px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a.logout-btn {
         padding-top: 20px;
