@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../../assets/css/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="../../assets/css/Ionicons/css/ionicons.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../assets/js/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- DataTables Plugin -->
+    <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="../../assets/css/alfatrex.min.css">
 
@@ -94,7 +94,7 @@
                     <ul class="treeview-menu">
                         <li><a href="account-info.html">Info Akun</a></li>
                         <li><a href="shipment-address.html">Alamat Pengirim</a></li>
-                        <li class="active"><a href="#">Alamat Pelanggan / Penerima</a></li>
+                        <li class="active"><a href="#">Alamat Pelanggan/Penerima</a></li>
                         <li><a href="pickup-address.html">Alamat Pickup</a></li>
                     </ul>
                 </li>
@@ -144,7 +144,7 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Main content -->
-        <section class="content container-fluid customer-address">
+        <section class="content container-fluid">
             <div class="box box-solid box-transparent">
                 <div class="box-body text-right">
                     <ul class="nav nav-tabs pull-right tab-button" role="tablist">
@@ -163,138 +163,806 @@
                                     <button class="btn btn-secondary mr-2" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
                                     <button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button>
                                 </div>
-                                <div class="col-xs-12 mt-10">
-                                    <table id="example2" class="table table-bordered table-hover">
+                                <div class="col-xs-12">
+
+                                    <table id="example" class="display nowrap" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>&nbsp;<br>
-                                                <div class="checkbox checkbox-primary">
-                                                    <input id="t0" type="checkbox">
-                                                    <label for="t0">
-                                                    </label>
-                                                </div>
-                                            </th>
-                                            <th>Kode<br><input type="text" class="form-control"></th>
-                                            <th>Nama<br><input type="text" class="form-control"></th>
-                                            <th>Alamat<br><input type="text" class="form-control"></th>
-                                            <th>Telepon<br><input type="text" class="form-control"></th>
-                                            <th>Group<br><input type="text" class="form-control"></th>
-                                            <th>&nbsp;<br><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button></th>
+                                            <th data-sortable="false">&nbsp;</th>
+                                            <th>Kode</th>
+                                            <th>Nama</th>
+                                            <th>Alamat</th>
+                                            <th>Telepon</th>
+                                            <th>Group</th>
+                                            <th data-sortable="false">&nbsp;</th>
+                                        </tr>
+                                        <tr class="second">
+                                            <th style="padding: 8px 10px"></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th class="text-center"></th>
                                         </tr>
                                         </thead>
+
                                         <tbody>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t1" type="checkbox">
-                                                    <label for="t1">
-                                                    </label>
+                                                    <input id="dt1" type="checkbox" checked="">
+                                                    <label for="dt1"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 4.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td>4</td>
-                                            <td>X</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t2" type="checkbox">
-                                                    <label for="t2">
-                                                    </label>
+                                                    <input id="dt2" type="checkbox" checked="">
+                                                    <label for="dt2"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.0
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td>5</td>
-                                            <td>C</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$3,120</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t3" type="checkbox">
-                                                    <label for="t3">
-                                                    </label>
+                                                    <input id="dt3" type="checkbox" checked="">
+                                                    <label for="dt3"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 5.5
-                                            </td>
-                                            <td>Win 95+</td>
-                                            <td>5.5</td>
-                                            <td>A</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Garrett Winters</td>
+                                            <td>Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>$5,300</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t4" type="checkbox">
-                                                    <label for="t4">
-                                                    </label>
+                                                    <input id="dt4" type="checkbox" checked="">
+                                                    <label for="dt4"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                                Explorer 6
-                                            </td>
-                                            <td>Win 98+</td>
-                                            <td>6</td>
-                                            <td>A</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Cedric Kelly</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$3,600</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t5" type="checkbox">
-                                                    <label for="t5">
-                                                    </label>
+                                                    <input id="dt5" type="checkbox" checked="">
+                                                    <label for="dt5"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td>7</td>
-                                            <td>A</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Jenna Elliott</td>
+                                            <td>Financial Controller</td>
+                                            <td>Edinburgh</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$5,300</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t6" type="checkbox">
-                                                    <label for="t6">
-                                                    </label>
+                                                    <input id="dt6" type="checkbox" checked="">
+                                                    <label for="dt6"></label>
                                                 </div>
                                             </td>
-                                            <td>Trident</td>
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td>6</td>
-                                            <td>A</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$4,525</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
-                                                    <input id="t7" type="checkbox">
-                                                    <label for="t7">
-                                                    </label>
+                                                    <input id="dt7" type="checkbox" checked="">
+                                                    <label for="dt7"></label>
                                                 </div>
                                             </td>
-                                            <td>Gecko</td>
-                                            <td>Firefox 1.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.7</td>
-                                            <td>A</td>
-                                            <td><a data-toggle="modal" data-target="#edit-address"><i class="fa fa-edit"></i> <u>Ubah</u></a> | <a data-toggle="modal" data-target="#delete-address"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt8" type="checkbox" checked="">
+                                                    <label for="dt8"></label>
+                                                </div>
+                                            </td>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>
+                                            <td>$6,730</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt9" type="checkbox" checked="">
+                                                    <label for="dt9"></label>
+                                                </div>
+                                            </td>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>
+                                            <td>$5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt10" type="checkbox" checked="">
+                                                    <label for="dt10"></label>
+                                                </div>
+                                            </td>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>
+                                            <td>$3,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt11" type="checkbox" checked="">
+                                                    <label for="dt11"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jena Gaines</td>
+                                            <td>System Architect</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>
+                                            <td>$5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt12" type="checkbox" checked="">
+                                                    <label for="dt12"></label>
+                                                </div>
+                                            </td>
+                                            <td>Quinn Flynn</td>
+                                            <td>Financial Controller</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt13" type="checkbox" checked="">
+                                                    <label for="dt13"></label>
+                                                </div>
+                                            </td>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>
+                                            <td>$5,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt14" type="checkbox" checked="">
+                                                <label for="dt14"></label>
+                                            </div></td>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>
+                                            <td>$4,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt15" type="checkbox" checked="">
+                                                    <label for="dt15"></label>
+                                                </div>
+                                            </td>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>
+                                            <td>$2,875</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt16" type="checkbox" checked="">
+                                                    <label for="dt16"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michael Silva</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>
+                                            <td>$3,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt17" type="checkbox" checked="">
+                                                    <label for="dt17"></label>
+                                                </div>
+                                            </td>
+                                            <td>Paul Byrd</td>
+                                            <td>Javascript Developer</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>
+                                            <td>$5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt18" type="checkbox" checked="">
+                                                    <label for="dt18"></label>
+                                                </div>
+                                            </td>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>
+                                            <td>$3,120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt19" type="checkbox" checked="">
+                                                    <label for="dt19"></label>
+                                                </div>
+                                            </td>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$3,120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt20" type="checkbox" checked="">
+                                                    <label for="dt20"></label>
+                                                </div>
+                                            </td>
+                                            <td>Dai Rios</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>2012/09/26</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt21" type="checkbox" checked="">
+                                                <label for="dt21"></label>
+                                            </div></td>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Financial Controller</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>2011/09/03</td>
+                                            <td>$4,965</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt22" type="checkbox" checked="">
+                                                <label for="dt22"></label>
+                                            </div></td>
+                                            <td>Yuri Berry</td>
+                                            <td>System Architect</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>2009/06/25</td>
+                                            <td>$3,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt24" type="checkbox" checked="">
+                                                <label for="dt24"></label>
+                                            </div></td>
+                                            <td>Caesar Vance</td>
+                                            <td>Technical Author</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$4,965</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt25" type="checkbox" checked="">
+                                                    <label for="dt25"></label>
+                                                </div>
+                                            </td>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2010/09/20</td>
+                                            <td>$4,965</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt26" type="checkbox" checked="">
+                                                <label for="dt26"></label>
+                                            </div></td>
+                                            <td>Angelica Ramos</td>
+                                            <td>System Architect</td>
+                                            <td>London</td>
+                                            <td>36</td>
+                                            <td>2009/10/09</td>
+                                            <td>$2,875</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt27" type="checkbox" checked="">
+                                                <label for="dt27"></label>
+                                            </div></td>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>2010/12/22</td>
+                                            <td>$4,525</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt28" type="checkbox" checked="">
+                                                    <label for="dt28"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jennifer Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>28</td>
+                                            <td>2010/11/14</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt29" type="checkbox" checked="">
+                                                <label for="dt29"></label>
+                                            </div></td>
+                                            <td>Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>18</td>
+                                            <td>2011/06/07</td>
+                                            <td>$3,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt30" type="checkbox" checked="">
+                                                <label for="dt30"></label>
+                                            </div></td>
+                                            <td>Ebony Grimes</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>2010/03/11</td>
+                                            <td>$2,875</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt31" type="checkbox" checked="">
+                                                <label for="dt31"></label>
+                                            </div></td>
+                                            <td>Russell Chavez</td>
+                                            <td>Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>20</td>
+                                            <td>2011/08/14</td>
+                                            <td>$3,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt32" type="checkbox" checked="">
+                                                    <label for="dt32"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michelle House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>37</td>
+                                            <td>2011/06/02</td>
+                                            <td>$3,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt33" type="checkbox" checked="">
+                                                <label for="dt33"></label>
+                                            </div></td>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>2009/10/22</td>
+                                            <td>$2,875</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="dt34" type="checkbox" checked="">
+                                                <label for="dt34"></label>
+                                            </div></td>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>2011/05/07</td>
+                                            <td>$6,730</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt35" type="checkbox" checked="">
+                                                    <label for="dt35"></label>
+                                                </div>
+                                            </td>
+                                            <td>Gavin Cortez</td>
+                                            <td>Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>2008/10/26</td>
+                                            <td>$6,730</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt36" type="checkbox" checked="">
+                                                    <label for="dt36"></label>
+                                                </div>
+                                            </td>
+                                            <td>Martena Mccray</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>2011/03/09</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt37" type="checkbox" checked="">
+                                                    <label for="dt37"></label>
+                                                </div>
+                                            </td>
+                                            <td>Unity Butler</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/12/09</td>
+                                            <td>$3,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt38" type="checkbox" checked="">
+                                                    <label for="dt38"></label>
+                                                </div>
+                                            </td>
+                                            <td>Howard Hatfield</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>51</td>
+                                            <td>2008/12/16</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt39" type="checkbox" checked="">
+                                                    <label for="dt39"></label>
+                                                </div>
+                                            </td>
+                                            <td>Hope Fuentes</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>41</td>
+                                            <td>2010/02/12</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt40" type="checkbox" checked="">
+                                                    <label for="dt40"></label>
+                                                </div>
+                                            </td>
+                                            <td>Vivian Harrell</td>
+                                            <td>System Architect</td>
+                                            <td>San Francisco</td>
+                                            <td>62</td>
+                                            <td>2009/02/14</td>
+                                            <td>$4,965</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt41" type="checkbox" checked="">
+                                                    <label for="dt41"></label>
+                                                </div>
+                                            </td>
+                                            <td>Timothy Mooney</td>
+                                            <td>Financial Controller</td>
+                                            <td>London</td>
+                                            <td>37</td>
+                                            <td>2008/12/11</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt42" type="checkbox" checked="">
+                                                    <label for="dt42"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>65</td>
+                                            <td>2008/09/26</td>
+                                            <td>$5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt43" type="checkbox" checked="">
+                                                    <label for="dt43"></label>
+                                                </div>
+                                            </td>
+                                            <td>Miriam Weiss</td>
+                                            <td>Support Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>64</td>
+                                            <td>2011/02/03</td>
+                                            <td>$4,965</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt44" type="checkbox" checked="">
+                                                    <label for="dt44"></label>
+                                                </div>
+                                            </td>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$4,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt45" type="checkbox" checked="">
+                                                    <label for="dt45"></label>
+                                                </div>
+                                            </td>
+                                            <td>Odessa Jackson</td>
+                                            <td>Support Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>37</td>
+                                            <td>2009/08/19</td>
+                                            <td>$3,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt46" type="checkbox" checked="">
+                                                    <label for="dt46"></label>
+                                                </div>
+                                            </td>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2013/08/11</td>
+                                            <td>$3,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt47" type="checkbox" checked="">
+                                                    <label for="dt47"></label>
+                                                </div>
+                                            </td>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/07/07</td>
+                                            <td>$4,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt48" type="checkbox" checked="">
+                                                    <label for="dt48"></label>
+                                                </div>
+                                            </td>
+                                            <td>Elton Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Edinburgh</td>
+                                            <td>64</td>
+                                            <td>2012/04/09</td>
+                                            <td>$6,730</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt49" type="checkbox" checked="">
+                                                    <label for="dt49"></label>
+                                                </div>
+                                            </td>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010/01/04</td>
+                                            <td>$4,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt50" type="checkbox" checked="">
+                                                    <label for="dt50"></label>
+                                                </div>
+                                            </td>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012/06/01</td>
+                                            <td>$5,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt51" type="checkbox" checked="">
+                                                    <label for="dt51"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013/02/01</td>
+                                            <td>$2,875</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt52" type="checkbox" checked="">
+                                                    <label for="dt52"></label>
+                                                </div>
+                                            </td>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$4,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt53" type="checkbox" checked="">
+                                                    <label for="dt53"></label>
+                                                </div>
+                                            </td>
+                                            <td>Hermione Butler</td>
+                                            <td>Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011/03/21</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt54" type="checkbox" checked="">
+                                                    <label for="dt54"></label>
+                                                </div>
+                                            </td>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009/02/27</td>
+                                            <td>$3,120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt55" type="checkbox" checked="">
+                                                    <label for="dt55"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010/07/14</td>
+                                            <td>$5,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt56" type="checkbox" checked="">
+                                                    <label for="dt56"></label>
+                                                </div>
+                                            </td>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>
+                                            <td>$5,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt57" type="checkbox" checked="">
+                                                    <label for="dt57"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$4,080</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt58" type="checkbox" checked="">
+                                                    <label for="dt58"></label>
+                                                </div>
+                                            </td>
+                                            <td>Donna Snider</td>
+                                            <td>System Architect</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$3,120</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -558,10 +1226,10 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="../../assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="../../assets/js/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../../assets/js/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../../assets/js/datatables/jquery.dataTables.js"></script>
 <!-- Alfatrex App -->
 <script src="../../assets/js/alfatrex.min.js"></script>
+
 
 <script>
     $(function () {
@@ -569,7 +1237,7 @@
     })
 
 
-    $(function () {
+/*    $(function () {
         $('#example1').DataTable()
         $('#example2').DataTable({
             'paging'      : true,
@@ -579,7 +1247,32 @@
             'info'        : true,
             'autoWidth'   : false
         })
-    })
+    })*/
+
+    $(document).ready( function () {
+        var table = $('#example').DataTable({
+            orderCellsTop: true,   //move sorting to top header
+            lengthChange: false,
+            searching   : false
+        });
+
+        // Get the index of matching row.  Assumes only one match
+        var indexes = table.rows().eq( 0 ).filter( function (rowIdx) {    //check column 0 of each row for tradeMsg.message.coin
+            return table.cell( rowIdx, 1 ).data() === '<input type="text" class="form-control">' ? true : false;
+        } );
+
+        // grab the data from the row
+        var data = table.row(indexes).data();
+
+        // populate the .second header with the data
+        for (i = 0; i < data.length; i++) {
+            $('.second').find('th').eq(i).html( data[i] );
+        }
+
+        // remove the row from the table
+        table.row(indexes).remove().draw(false);
+
+    } );
 
 </script>
 </body>
