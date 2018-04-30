@@ -88,7 +88,7 @@
                     <ul class="treeview-menu">
                         <li><a href="../profile/account-info.html">Info Akun</a></li>
                         <li><a href="#">Alamat Pengirim</a></li>
-                        <li><a href="#">Alamat Pelanggan/Penerima</a></li>
+                        <li><a href="#">Alamat Pelanggan / Penerima</a></li>
                         <li><a href="#">Alamat Pickup</a></li>
                     </ul>
                 </li>
@@ -172,7 +172,7 @@
                                     <label class="fw-500">Pengirim</label>
                                     <a class="btn btn-secondary-outline no-border pull-right" onclick="addAddressPengirim()"><i class="fa fa-plus"></i> Buat Alamat Baru Pengirim</a>
                                 </div>
-                                <div class="input-group select-group mt-10">
+                                <div class="input-group select-group btn-block mt-10">
                                     <span class="input-group-addon">
                                       <span class="truck-icon" aria-hidden="true"></span>
                                     </span>
@@ -186,22 +186,34 @@
                                 <div id="addressPengirim" class="row no-gutters mt-30">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="nama" placeholder="Nama Pengirim" value="">
+                                            <fieldset class="float-label">
+                                                <input name="nama" id="nama" type="text" class="form-control" required />
+                                                <label for="nama" class="fs-13px">Nama Pengirim</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="telephone" placeholder="Telephone" value="">
+                                            <fieldset class="float-label">
+                                                <input name="telephone" id="telephone" type="text" class="form-control" required />
+                                                <label for="telephone" class="fs-13px">Telephone</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="alamat" placeholder="Alamat" value="">
+                                            <fieldset class="float-label">
+                                                <input name="alamat" id="alamat" type="text" class="form-control" required />
+                                                <label for="alamat" class="fs-13px">Alamat</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="kecamatan" placeholder="Kecamatan, Kota Pengirim" value="">
+                                            <fieldset class="float-label">
+                                                <input name="kecamatan" id="kecamatan" type="text" class="form-control" required />
+                                                <label for="kecamatan" class="fs-13px">Kecamatan, Kota Pengirim</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="checkbox checkbox-primary ml-5">
@@ -217,7 +229,7 @@
                                     <label class="fw-500">Penerima</label>
                                     <a class="btn btn-secondary-outline no-border pull-right" onclick="addAddressPenerima()"><i class="fa fa-plus"></i> Buat Alamat Baru Penerima</a>
                                 </div>
-                                <div class="input-group select-group mt-10">
+                                <div class="input-group select-group btn-block mt-10">
                                     <span class="input-group-addon">
                                       <span class="house-icon" aria-hidden="true"></span>
                                     </span>
@@ -231,22 +243,34 @@
                                 <div id="addressPenerima" class="row no-gutters mt-30 addressPenerima">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="nama" placeholder="Nama Pengirim" value="">
+                                            <fieldset class="float-label">
+                                                <input name="nama" id="nama2" type="text" class="form-control" required />
+                                                <label for="nama" class="fs-13px">Nama Pengirim</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="telephone" placeholder="Telephone" value="">
+                                            <fieldset class="float-label">
+                                                <input name="telephone" id="telephone2" type="text" class="form-control" required />
+                                                <label for="telephone" class="fs-13px">Telephone</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="alamat" placeholder="Alamat" value="">
+                                            <fieldset class="float-label">
+                                                <input name="alamat" id="alamat2" type="text" class="form-control" required />
+                                                <label for="alamat" class="fs-13px">Alamat</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control placeholder-normal fs-13px" id="kecamatan" placeholder="Kecamatan, Kota Pengirim" value="">
+                                            <fieldset class="float-label">
+                                                <input name="kecamatan" id="kecamatan2" type="text" class="form-control" required />
+                                                <label for="kecamatan" class="fs-13px">Kecamatan, Kota Pengirim</label>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="checkbox checkbox-primary ml-5">
@@ -264,7 +288,7 @@
 
                 <div class="box box-solid">
                     <div class="box-body detail-paket">
-                        <div class="col-xs-12 pl-50 pr-50 pt-20 pb-30">
+                        <div class="col-xs-12 pl-50 pr-50 pt-20 pb-70">
                             <div class="ship-2label-format">
                                 <label class="fw-500">Detail Paket</label>
                                 <table class="table mt-10 mb-0">
@@ -332,7 +356,7 @@
                                         <div class="row no-gutters pt-10 pb-5">
                                             <div class="col-xs-2">
                                                 <div class="radio radio-primary">
-                                                    <input type="radio" name="paket" id="radio1" value="option1">
+                                                    <input type="radio" name="paket" id="radio1" value="option1" checked>
                                                     <label for="radio1" class="btn-block"></label>
                                                 </div>
                                             </div>
@@ -393,7 +417,7 @@
                                                     <label for="radio4" class="btn-block"></label>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-4 pl-0 pr-0">
+                                            <div class="col-xs-4 pl-10 pr-0">
                                                 <img src="../../assets/img/new/ic-ecs-sm.png" class="img-service-price"/>
                                                 <span class="display-block service-eta eta4">3+ Hari</span>
                                             </div>
@@ -419,7 +443,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 text-right">
-                                <button class="btn btn-secondary btn-lg">SUBMIT</button>
+                                <a class="btn btn-secondary btn-lg" href="cetak-label-success.html">SUBMIT</a>
                             </div>
                         </div>
                     </div>

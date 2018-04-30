@@ -43,6 +43,10 @@
     border-top: 1px solid #e4e4e4;
     z-index: 811;
     padding: 30px 15px;
+    box-shadow: 1px 1px 30px #ddd;
+}
+.ft-action .btn {
+    width: 150px;
 }
 .stepNav {
     margin: 5px 0;
@@ -193,6 +197,9 @@
     font-size: 1.7em;
     vertical-align: sub;
 }
+.shipment .float-label input {
+    height: 43px;
+}
 .ship-2label-format {
     font-size: 1.4em;
     padding-top: 3px;
@@ -210,6 +217,7 @@
     background-color: transparent;
 }
 .ship-2label-format .btn-secondary-outline {
+    height: 32px;
     font-weight: 500;
 }
 /*.ship-2label-format + .input-group {*/
@@ -329,6 +337,73 @@
 .detail-paket .img-service-price {
     width: 80px;
 }
+.detail-paket .service-eta {
+    font-size: 14px;
+    font-weight: 500;
+}
+.detail-paket .service-eta-price {
+    line-height: 40px;
+}
+.detail-paket .service-eta.eta1 {
+    color: #f22928;
+}
+.detail-paket .service-eta.eta2 {
+    color: #075baf;
+}
+.detail-paket .service-eta.eta3 {
+    color: #66962d;
+}
+.detail-paket .service-eta.eta4 {
+    color: #feab06;
+}
+.detail-paket .total-harga {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.treeview-menu li a {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.cls-wrapper img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+.cls-wrapper .p1 {
+    font-size: 18px;
+}
+.cls-wrapper .p2 {
+    font-size: 22px;
+    color: #2296F3;
+}
+.cls-wrapper .p3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.cls-wrapper .p4, .cls-wrapper .p5 {
+    font-size: 13px;
+}
+.cls-wrapper .btn-secondary {
+    width: 220px;
+}
+.account-info .btn-secondary-outline.btn-sm {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.account-info .btn-secondary-outline.btn-sm > .fa-plus-circle {
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: sub;
+}
+.modal .modal-body .col-xs-12 > .btn{
+    width: 135px;
+}
+.customer-address .nav-tabs > li > a > button, .customer-address .tab-content .btn {
+    width: 220px;
+}
+
 
 .tab-button{
     border-bottom: none;
@@ -362,38 +437,6 @@
 }
 .cust-group .radio-primary input[type="radio"] + label::before{
     top: 12px;
-}
-
-
-
-/*custom checkboxes shipment*/
-input[type="radio"]{
-    position: absolute;
-    right: 9000px;
-.detail-paket .service-eta {
-    font-size: 14px;
-    font-weight: 500;
-}
-.detail-paket .service-eta-price {
-    line-height: 40px;
-}
-.detail-paket .service-eta.eta1 {
-    color: #f22928;
-}
-.detail-paket .service-eta.eta2 {
-    color: #075baf;
-}
-.detail-paket .service-eta.eta3 {
-    color: #66962d;
-}
-.detail-paket .service-eta.eta4 {
-    color: #feab06;
-}
-.detail-paket .total-harga {
-    height: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #9a9a9a;
 }
 
 @media (min-width: 768px){
