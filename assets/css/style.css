@@ -445,8 +445,8 @@
 .modal .modal-body .col-xs-12 > .btn{
     width: 135px;
 }
-.customer-address .nav-tabs > li > a > button, .customer-address .tab-content .btn {
-    width: 220px;
+.customer-address .nav-tabs > li > a > button, .customer-address .tab-content .row > .text-right .btn {
+    width: 225px;
 }
 .pilih-penerima-tab .modal-body .nav-tabs > li.active > a {
     color: #444;
@@ -575,6 +575,8 @@
     background-color: #fff;
     padding: 0;
     border-radius: 4px;
+    height: 35px;
+    line-height: 20px;
 }
 .inputfile-custom:focus + label,
 .inputfile-custom.has-focus + label,
@@ -612,7 +614,7 @@
     font-weight: 500;
     padding: 0 85px;
 }
-.shipment .custom-alert {
+.custom-alert {
     color: #444 !important;
     background-color: #fffada !important;
     border: 0;
@@ -621,26 +623,31 @@
     font-size: 16px;
     padding: 20px;
 }
-.shipment .custom-alert .close {
+.custom-alert .close {
     right: 0;
 }
-.shipment .custom-alert .fa-info-circle {
+.custom-alert .fa-info-circle {
     color: #fec675;
 }
-.shipment .custom-alert a {
+.custom-alert a {
     color: #2296F3;
 }
-.shipment .custom-alert a:hover, .shipment .custom-alert a:active, .shipment .custom-alert a:focus {
+.custom-alert a:hover, .custom-alert a:active, .custom-alert a:focus {
     color: #286090;
 }
 .shipment.cetak-label table.dataTable tbody tr td.text-center a:first-child {
     border: 0;
 }
-.shipment table.dataTable thead tr th .btn-secondary, .btn-cetak {
+table.dataTable thead tr th .btn-secondary,
+.btn-cetak {
     width: 120px;
 }
 .shipment table.dataTable thead tr th input {
     background-color: #EDF7FF;
+}
+.btn-mass-upload {
+    width: 150px;
+    margin-left: -10px;
 }
 
 .tab-button{
