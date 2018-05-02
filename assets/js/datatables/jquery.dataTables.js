@@ -11427,7 +11427,7 @@
 			 *      } );
 			 *    } );
              */
-            "sEmptyTable": "No data available in table",
+            "sEmptyTable": "<div class='table-ico-empty'><img src='../../assets/img/new/ic-route.png' width='60px'><br><p class='help-block mt-15'>Anda belum memiliki data alamat pelanggan.</p></div>",
 
 
             /**
@@ -11459,7 +11459,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfo": "Tampil _START_ - _END_ of _TOTAL_ entries",
+            "sInfo": "Tampil _START_ - _END_ dari _TOTAL_",
 
 
             /**
@@ -11480,7 +11480,7 @@
 			 *      } );
 			 *    } );
              */
-            "sInfoEmpty": "Showing 0 to 0 of 0 entries",
+            "sInfoEmpty": "Tampil 0 dari 0",
 
 
             /**
