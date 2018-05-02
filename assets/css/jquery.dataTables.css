@@ -60,7 +60,7 @@ table.dataTable thead .sorting_desc_disabled {
 table.dataTable thead .transparent.sorting_asc {
     background-image: none;
 }
-table.dataTable thead tr.second{
+table.dataTable thead tr.second, table.dataTable thead tr.third{
     background-color: #EDF7FF;
 }
 table.dataTable tbody tr {
