@@ -162,11 +162,11 @@
                             <div class="row">
                                 <div class="col-xs-12 text-right">
                                     <button class="btn btn-secondary mr-2" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
-                                    <button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button>
+                                    <a href="mass-upload.html"><button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button></a>
                                 </div>
                                 <div class="col-xs-12">
 
-                                    <table id="example" class="display nowrap" width="100%">
+                                    <table id="custTable" class="display nowrap" width="100%">
                                         <thead>
                                         <tr>
                                             <th data-sortable="false" class="transparent">&nbsp;</th>
@@ -970,7 +970,756 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="tab2">s</div>
+                        <div role="tabpanel" class="tab-pane" id="tab2">
+                            <div class="row mt-30">
+                                <div class="col-xs-12 text-right">
+                                    <a href="add-group.html"><button class="btn btn-secondary mr-2"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Group</button></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+
+                                    <table id="groupListTable" class="display nowrap" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th data-sortable="false" class="transparent">&nbsp;</th>
+                                            <th>Kode</th>
+                                            <th>Nama Group</th>
+                                            <th>Total Anggota</th>
+                                            <th>Status</th>
+                                            <th data-sortable="false">&nbsp;</th>
+                                        </tr>
+                                        <tr class="third">
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th class="text-center"></th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs2" type="checkbox" checked="">
+                                                    <label for="cs2"></label>
+                                                </div>
+                                            </td>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/07/25</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs3" type="checkbox" checked="">
+                                                    <label for="cs3"></label>
+                                                </div>
+                                            </td>
+                                            <td>Garrett Winters</td>
+                                            <td>Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/07/25</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs4" type="checkbox" checked="">
+                                                    <label for="cs4"></label>
+                                                </div>
+                                            </td>
+                                            <td>Cedric Kelly</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2012/03/29</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs5" type="checkbox" checked="">
+                                                    <label for="cs5"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jenna Elliott</td>
+                                            <td>Financial Controller</td>
+                                            <td>Edinburgh</td>
+                                            <td>2008/11/28</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs6" type="checkbox" checked="">
+                                                    <label for="cs6"></label>
+                                                </div>
+                                            </td>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>2012/12/02</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs7" type="checkbox" checked="">
+                                                    <label for="cs7"></label>
+                                                </div>
+                                            </td>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>2012/08/06</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs8" type="checkbox" checked="">
+                                                    <label for="cs8"></label>
+                                                </div>
+                                            </td>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>2010/10/14</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs9" type="checkbox" checked="">
+                                                    <label for="cs9"></label>
+                                                </div>
+                                            </td>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>2009/09/15</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs10" type="checkbox" checked="">
+                                                    <label for="cs10"></label>
+                                                </div>
+                                            </td>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2008/12/13</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs11" type="checkbox" checked="">
+                                                    <label for="cs11"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jena Gaines</td>
+                                            <td>System Architect</td>
+                                            <td>London</td>
+                                            <td>2008/12/19</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs12" type="checkbox" checked="">
+                                                    <label for="cs12"></label>
+                                                </div>
+                                            </td>
+                                            <td>Quinn Flynn</td>
+                                            <td>Financial Controller</td>
+                                            <td>Edinburgh</td>
+                                            <td>2013/03/03</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs13" type="checkbox" checked="">
+                                                    <label for="cs13"></label>
+                                                </div>
+                                            </td>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>2008/10/16</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs14" type="checkbox" checked="">
+                                                <label for="cs14"></label>
+                                            </div></td>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>2012/12/18</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs15" type="checkbox" checked="">
+                                                    <label for="cs15"></label>
+                                                </div>
+                                            </td>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>2010/03/17</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs16" type="checkbox" checked="">
+                                                    <label for="cs16"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michael Silva</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>2012/11/27</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs17" type="checkbox" checked="">
+                                                    <label for="cs17"></label>
+                                                </div>
+                                            </td>
+                                            <td>Paul Byrd</td>
+                                            <td>Javascript Developer</td>
+                                            <td>New York</td>
+                                            <td>2010/06/09</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs18" type="checkbox" checked="">
+                                                    <label for="cs18"></label>
+                                                </div>
+                                            </td>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>2009/04/10</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs19" type="checkbox" checked="">
+                                                    <label for="cs19"></label>
+                                                </div>
+                                            </td>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>2012/10/13</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs20" type="checkbox" checked="">
+                                                    <label for="cs20"></label>
+                                                </div>
+                                            </td>
+                                            <td>Dai Rios</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>2012/09/26</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs21" type="checkbox" checked="">
+                                                <label for="cs21"></label>
+                                            </div></td>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Financial Controller</td>
+                                            <td>New York</td>
+                                            <td>2011/09/03</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs22" type="checkbox" checked="">
+                                                <label for="cs22"></label>
+                                            </div></td>
+                                            <td>Yuri Berry</td>
+                                            <td>System Architect</td>
+                                            <td>New York</td>
+                                            <td>2009/06/25</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs24" type="checkbox" checked="">
+                                                <label for="cs24"></label>
+                                            </div></td>
+                                            <td>Caesar Vance</td>
+                                            <td>Technical Author</td>
+                                            <td>New York</td>
+                                            <td>2011/12/12</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs25" type="checkbox" checked="">
+                                                    <label for="cs25"></label>
+                                                </div>
+                                            </td>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Edinburgh</td>
+                                            <td>2010/09/20</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs26" type="checkbox" checked="">
+                                                <label for="cs26"></label>
+                                            </div></td>
+                                            <td>Angelica Ramos</td>
+                                            <td>System Architect</td>
+                                            <td>London</td>
+                                            <td>2009/10/09</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs27" type="checkbox" checked="">
+                                                <label for="cs27"></label>
+                                            </div></td>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2010/12/22</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs28" type="checkbox" checked="">
+                                                    <label for="cs28"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jennifer Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>2010/11/14</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs29" type="checkbox" checked="">
+                                                <label for="cs29"></label>
+                                            </div></td>
+                                            <td>Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>2011/06/07</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs30" type="checkbox" checked="">
+                                                <label for="cs30"></label>
+                                            </div></td>
+                                            <td>Ebony Grimes</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>2010/03/11</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs31" type="checkbox" checked="">
+                                                <label for="cs31"></label>
+                                            </div></td>
+                                            <td>Russell Chavez</td>
+                                            <td>Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/08/14</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs32" type="checkbox" checked="">
+                                                    <label for="cs32"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michelle House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/06/02</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs33" type="checkbox" checked="">
+                                                <label for="cs33"></label>
+                                            </div></td>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>2009/10/22</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="checkbox checkbox-primary">
+                                                <input id="cs34" type="checkbox" checked="">
+                                                <label for="cs34"></label>
+                                            </div></td>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>2011/05/07</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs35" type="checkbox" checked="">
+                                                    <label for="cs35"></label>
+                                                </div>
+                                            </td>
+                                            <td>Gavin Cortez</td>
+                                            <td>Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>2008/10/26</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs36" type="checkbox" checked="">
+                                                    <label for="cs36"></label>
+                                                </div>
+                                            </td>
+                                            <td>Martena Mccray</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/03/09</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs37" type="checkbox" checked="">
+                                                    <label for="cs37"></label>
+                                                </div>
+                                            </td>
+                                            <td>Unity Butler</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>2009/12/09</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs38" type="checkbox" checked="">
+                                                    <label for="cs38"></label>
+                                                </div>
+                                            </td>
+                                            <td>Howard Hatfield</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>2008/12/16</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs39" type="checkbox" checked="">
+                                                    <label for="cs39"></label>
+                                                </div>
+                                            </td>
+                                            <td>Hope Fuentes</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>2010/02/12</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs40" type="checkbox" checked="">
+                                                    <label for="cs40"></label>
+                                                </div>
+                                            </td>
+                                            <td>Vivian Harrell</td>
+                                            <td>System Architect</td>
+                                            <td>San Francisco</td>
+                                            <td>2009/02/14</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs41" type="checkbox" checked="">
+                                                    <label for="cs41"></label>
+                                                </div>
+                                            </td>
+                                            <td>Timothy Mooney</td>
+                                            <td>Financial Controller</td>
+                                            <td>London</td>
+                                            <td>2008/12/11</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs42" type="checkbox" checked="">
+                                                    <label for="cs42"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>2008/09/26</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs43" type="checkbox" checked="">
+                                                    <label for="cs43"></label>
+                                                </div>
+                                            </td>
+                                            <td>Miriam Weiss</td>
+                                            <td>Support Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/02/03</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs44" type="checkbox" checked="">
+                                                    <label for="cs44"></label>
+                                                </div>
+                                            </td>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>2011/05/03</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs45" type="checkbox" checked="">
+                                                    <label for="cs45"></label>
+                                                </div>
+                                            </td>
+                                            <td>Odessa Jackson</td>
+                                            <td>Support Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2009/08/19</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs46" type="checkbox" checked="">
+                                                    <label for="cs46"></label>
+                                                </div>
+                                            </td>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>2013/08/11</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs47" type="checkbox" checked="">
+                                                    <label for="cs47"></label>
+                                                </div>
+                                            </td>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>2009/07/07</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs48" type="checkbox" checked="">
+                                                    <label for="cs48"></label>
+                                                </div>
+                                            </td>
+                                            <td>Elton Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Edinburgh</td>
+                                            <td>2012/04/09</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs49" type="checkbox" checked="">
+                                                    <label for="cs49"></label>
+                                                </div>
+                                            </td>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>2010/01/04</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs50" type="checkbox" checked="">
+                                                    <label for="cs50"></label>
+                                                </div>
+                                            </td>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>2012/06/01</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs51" type="checkbox" checked="">
+                                                    <label for="cs51"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2013/02/01</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs52" type="checkbox" checked="">
+                                                    <label for="cs52"></label>
+                                                </div>
+                                            </td>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>2011/12/06</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs53" type="checkbox" checked="">
+                                                    <label for="cs53"></label>
+                                                </div>
+                                            </td>
+                                            <td>Hermione Butler</td>
+                                            <td>Director</td>
+                                            <td>London</td>
+                                            <td>2011/03/21</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs54" type="checkbox" checked="">
+                                                    <label for="cs54"></label>
+                                                </div>
+                                            </td>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>2009/02/27</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs55" type="checkbox" checked="">
+                                                    <label for="cs55"></label>
+                                                </div>
+                                            </td>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>2010/07/14</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs56" type="checkbox" checked="">
+                                                    <label for="cs56"></label>
+                                                </div>
+                                            </td>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>2008/11/13</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs57" type="checkbox" checked="">
+                                                    <label for="cs57"></label>
+                                                </div>
+                                            </td>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>2011/06/27</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="cs58" type="checkbox" checked="">
+                                                    <label for="cs58"></label>
+                                                </div>
+                                            </td>
+                                            <td>Donna Snider</td>
+                                            <td>System Architect</td>
+                                            <td>New York</td>
+                                            <td>2011/01/25</td>
+                                            <td class="text-center"><a class="text-primary" data-toggle="modal" data-target="#edit-group"><i class="fa fa-edit"></i> <u>Ubah</u></a> <a class="text-primary" data-toggle="modal" data-target="#delete-group"><i class="fa fa-trash"></i> <u>Hapus</u></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1135,13 +1884,13 @@
                             <div class="form-group dropdown-select">
                                 <label>Kode Toko</label>
                                 <select class="selectpicker form-control" data-live-search="true">
-                                    <option data-tokens="K12345" data-content="<p class='no-margin text-strong'>K12345</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                    <option data-tokens="K12345" data-content="<p class='no-margin text-strong'>K12345</p><p class='text-normal no-margin'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
                                         K12345
                                     </option>
-                                    <option data-tokens="K12346" data-content="<p class='no-margin text-strong'>K12346</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                    <option data-tokens="K12346" data-content="<p class='no-margin text-strong'>K12346</p><p class='text-normal no-margin'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
                                         K12346
                                     </option>
-                                    <option data-tokens="K12347" data-content="<p class='no-margin text-strong'>K12347</p><p class='text-normal'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
+                                    <option data-tokens="K12347" data-content="<p class='no-margin text-strong'>K12347</p><p class='text-normal no-margin'>Alfamart Cikokol, Jl Nn Blok C1 No. 1, Cikokol, Kec. Tangerang, Kota Tangerang, Banten 15117</p>">
                                         K12347
                                     </option>
                                 </select>
@@ -1224,6 +1973,38 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
+
+
+    <!--Modal Hapus Group-->
+    <div class="modal fade in" id="delete-group">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-30">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Hapus Group</h4>
+                </div>
+                <div class="modal-body p-30">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Apakah Anda yakin untuk menghapus ?</p>
+                            <p class="text-strong">
+                                Bulanan, 76 alamat
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-30">
+                        <div class="col-xs-12 text-center">
+                            <button class="btn btn-secondary">HAPUS GROUP</button>
+                            <button class="btn btn-default" data-dismiss="modal">BATAL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
 </div>
 <!-- ./wrapper -->
 <!-- REQUIRED JS SCRIPTS -->
@@ -1259,7 +2040,7 @@
     })*/
 
     $(document).ready( function () {
-        var table = $('#example').DataTable({
+        var table = $('#custTable').DataTable({
             orderCellsTop: true,   //move sorting to top header
             lengthChange: false,
             searching   : false
@@ -1280,6 +2061,29 @@
 
         // remove the row from the table
         table.row(indexes).remove().draw(false);
+
+
+        var table = $('#groupListTable').DataTable({
+            orderCellsTop: true,   //move sorting to top header
+            lengthChange: false,
+            searching   : false
+        });
+
+        // Get the index of matching row.  Assumes only one match
+        var indexan = table.rows().eq( 0 ).filter( function (rowStatic) {    //check column 0 of each row for tradeMsg.message.coin
+            return table.cell( rowStatic, 1 ).data() === '<input type="text" class="form-control">' ? true : false;
+        } );
+
+        // grab the data from the row
+        var data = table.row(indexan).data();
+
+        // populate the .third header with the data
+        for (j = 0; j < data.length; j++) {
+            $('.third').find('th').eq(j).html( data[j] );
+        }
+
+        // remove the row from the table
+        table.row(indexan).remove().draw(false);
 
     } );
 

@@ -687,7 +687,7 @@
     top: 5px;
     left: 12px;
     font-weight: normal;
-    z-index: 2;
+    z-index: 3;
 }
 .form-group.dropdown-select:hover label{
     color: #b3b2b2;
@@ -697,9 +697,57 @@
 }
 .form-group.dropdown-select .bootstrap-select button{
     height: 50px;
-    padding-top: 16px;
+    padding-top: 25px;
     border: 1px solid #ccc;
     background: #ffffff;
+    overflow: hidden;
+}
+.form-group.dropdown-select .bootstrap-select .dropdown-menu{
+    width: 100%;
+}
+.form-group.dropdown-select .bootstrap-select .dropdown-menu ul li{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.form-group.dropdown-select .bootstrap-select .dropdown-menu ul li a{
+    white-space: normal;
+    border-bottom: solid 1px #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.file-note{
+    margin-left: 75px;
+    line-height: 13px;
+}
+.file-note a{
+    font-weight: 500;
+}
+.table-ico-empty{
+    margin: 120px 0;
+}
+
+.listbox-address span.info-container{
+    display: none;
+}
+.listbox-address input.filter.form-control{
+    height: 43px;
+}
+.listbox-address .buttons .btn.moveall, .listbox-address .buttons .btn.removeall{
+    display: none;
+}
+.listbox-address .buttons .btn.move, .listbox-address .buttons .btn.remove{
+    width: auto;
+    border-radius: 4px!important;
+    position: absolute;
+}
+.listbox-address .buttons .btn.move{
+    right: -110px;
+    top: 61px;
+}
+.listbox-address .buttons .btn.remove{
+    left: -103px;
+    top: 108px;
 }
 
 @media (min-width: 768px){

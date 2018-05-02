@@ -126,6 +126,9 @@ aside.main-sidebar{
 }
 
 /*Typography*/
+.text-white {
+    color: #ffffff;
+}
 .text-blue {
     color: #105bab;
 }
