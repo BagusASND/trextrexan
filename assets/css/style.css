@@ -135,7 +135,7 @@
 .stepNav li:not(:first-child) a:before {
     right: -46px;
 }
-.stepNav li:last-child a:before {
+.stepNav li:last-child a:before, .stepNav li.selected:last-child a:before  {
     border: 0;
     background-image: none;
 }
@@ -459,6 +459,188 @@
 .pilih-penerima-tab .modal-body .tab-content {
     border: 1px solid #ddd;
     border-top: 0;
+}
+.pilih-penerima-tab .modal-body table.dataTable {
+    margin-top: 0;
+    padding-top: 10px;
+}
+.shipment .custom-callout {
+    color: #444 !important;
+    background-color: #fffada !important;
+    border-color: #ffaf4a;
+    border-radius: 0;
+}
+.shipment .custom-callout .fa-info-circle {
+    color: #fec675;
+}
+.shipment .custom-callout a {
+    color: #2296F3;
+}
+.shipment .custom-callout a:hover, .shipment .custom-callout a:active, .shipment .custom-callout a:focus {
+    color: #286090;
+}
+.shipment table.dataTable thead tr.second2, .shipment table.dataTable thead tr.second3 {
+    background-color: #EDF7FF;
+}
+.shipment .modal-body .btn-kembali {
+    color: #a1a1a1;
+    background-color: #f5f5f5;
+}
+.shipment .modal-body .btn-kembali i {
+    color: #bdbdbd;
+}
+.shipment .table-invalid, .shipment .table-invalid > .sorting_1  {
+    background-color: #fbe9e7 !important;
+}
+.shipment .table-invalid .fa-warning {
+    color: #a12626;
+    vertical-align: super;
+}
+.shipment .edit-penerima .modal-body .dimensi-paket td {
+    border-top: 0;
+}
+.shipment .edit-penerima .modal-body .dimensi-paket td .float-label input:valid + label,
+.shipment .edit-penerima .modal-body .dimensi-paket td .float-label input:focus + label,
+.shipment .edit-penerima .modal-body .dimensi-paket td .float-label input:disabled + label {
+    font-size: 10px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .img-service-price {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .service-eta.eta1 {
+    color: #f22928;
+    padding-left: 9px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .service-eta.eta2 {
+    color: #075baf;
+    padding-left: 0;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .service-eta.eta3 {
+    color: #66962d;
+    margin-left: -6px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .service-eta.eta4 {
+    color: #feab06;
+    margin-left: -20px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .border-gray-1px {
+    width: 24%;
+    height: 70px;
+    margin-right: 5px;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .border-gray-1px.na {
+    opacity: 0.5;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .border-gray-1px.na span:last-of-type {
+    font-size: 10px;
+    font-weight: 500;
+}
+.shipment .edit-penerima .modal-body .detail-penerima .service-price .border-gray-1px span:last-of-type {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile-custom + label {
+    color: #999999;
+}
+.inputfile-custom + label {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 4px;
+}
+.inputfile-custom:focus + label,
+.inputfile-custom.has-focus + label,
+.inputfile-custom + label:hover {
+    border-color: #ccc;
+}
+.inputfile-custom + label span,
+.inputfile-custom + label strong {
+    padding: 0.625rem 1.25rem;
+}
+.inputfile-custom + label span {
+    width: 200px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+.inputfile-custom + label strong {
+    height: 100%;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #2296F3;
+    display: inline-block;
+}
+.inputfile-custom:focus + label strong,
+.inputfile-custom.has-focus + label strong,
+.inputfile-custom + label:hover strong {
+    background-color: #286090;
+}
+.upload-input .help-block {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 85px;
+}
+.shipment .custom-alert {
+    color: #444 !important;
+    background-color: #fffada !important;
+    border: 0;
+    border-left: 5px solid #ffaf4a;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 20px;
+}
+.shipment .custom-alert .close {
+    right: 0;
+}
+.shipment .custom-alert .fa-info-circle {
+    color: #fec675;
+}
+.shipment .custom-alert a {
+    color: #2296F3;
+}
+.shipment .custom-alert a:hover, .shipment .custom-alert a:active, .shipment .custom-alert a:focus {
+    color: #286090;
+}
+.shipment.cetak-label table.dataTable tbody tr td.text-center a:first-child {
+    border: 0;
+}
+.shipment table.dataTable thead tr th .btn-secondary, .btn-cetak {
+    width: 120px;
+}
+.shipment table.dataTable thead tr th input {
+    background-color: #EDF7FF;
 }
 
 .tab-button{
