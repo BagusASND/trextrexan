@@ -311,7 +311,7 @@ aside.main-sidebar{
 .pt-35{padding-top: 35px;}
 .pt-40{padding-top: 40px;}
 .pt-45{padding-top: 45px;}
-.pt-50{padding-top: 50px;}
+.pt-50{padding-top: 50px!important;}
 
 .pb-0{padding-bottom: 0px;}
 .pb-5{padding-bottom: 5px;}
@@ -323,7 +323,7 @@ aside.main-sidebar{
 .pb-35{padding-bottom: 35px;}
 .pb-40{padding-bottom: 40px;}
 .pb-45{padding-bottom: 45px;}
-.pb-50{padding-bottom: 50px;}
+.pb-50{padding-bottom: 50px!important;}
 .pb-60{padding-bottom: 60px;}
 .pb-70{padding-bottom: 70px;}
 
