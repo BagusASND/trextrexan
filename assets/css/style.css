@@ -892,6 +892,27 @@ table.dataTable thead tr th .btn-secondary,
     width: 45%;
 }
 
+#invoiceTable tbody tr td:last-child a{
+    border-right: none;
+}
+#invoiceTable tbody tr td:last-child a span{
+    border-bottom: solid 1px;
+}
+
+.invoice .header-section{
+    border-bottom: solid 2px #ededed;
+}
+.invoice .header-section img{
+    width: 200px;
+}
+.invoice .header-section p{
+    font-size: 10px;
+}
+.invoice .header-section .comp-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 @media (min-width: 768px){
     .navbar-nav>li>a.logout-btn {
         padding-top: 20px;
