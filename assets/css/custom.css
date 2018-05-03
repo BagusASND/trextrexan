@@ -135,6 +135,9 @@ aside.main-sidebar{
 .text-red {
     color: #c91920;
 }
+.text-green-light {
+    color: #5F9123;
+}
 .text-muted {
     color: rgba(119, 119, 119, .5);
 }
@@ -287,8 +290,8 @@ aside.main-sidebar{
 /*Padding*/
 .no-padding{padding: 0px!important;}
 .p-3{padding: 3px;}
-.p-5{padding: 5px;}
-.p-10{padding: 10px;}
+.p-5{padding: 5px!important;}
+.p-10{padding: 10px!important;}
 .p-15{padding: 15px;}
 .p-20{padding: 20px;}
 .p-25{padding: 25px;}
