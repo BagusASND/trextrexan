@@ -48,12 +48,13 @@
     bottom: 0;
     background-color: #ffffff;
     border-top: 1px solid #e4e4e4;
-    z-index: 811;
+    -z-index: 811;
     padding: 30px 15px;
     box-shadow: 1px 1px 30px #ddd;
 }
 .ft-action .btn {
     width: 150px;
+    margin-right: 20px;
 }
 .stepNav {
     margin: 5px 0;
@@ -448,6 +449,10 @@
     line-height: 25px;
     vertical-align: sub;
 }
+.account-info .form-horizontal label {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 .modal .modal-body .col-xs-12 > .btn{
     width: 135px;
 }
@@ -485,7 +490,7 @@
 .shipment .custom-callout a:hover, .shipment .custom-callout a:active, .shipment .custom-callout a:focus {
     color: #286090;
 }
-.shipment table.dataTable thead tr.second2, .shipment table.dataTable thead tr.second3 {
+table.dataTable thead tr.second2, table.dataTable thead tr.second3 {
     background-color: #EDF7FF;
 }
 .shipment .modal-body .btn-kembali {
@@ -647,9 +652,6 @@
 table.dataTable thead tr th .btn-secondary,
 .btn-cetak {
     width: 120px;
-}
-.shipment table.dataTable thead tr th input {
-    background-color: #EDF7FF;
 }
 .btn-mass-upload {
     width: 150px;

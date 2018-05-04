@@ -187,33 +187,40 @@
                                         <th data-sortable="false">&nbsp;</th>
                                     </tr>
                                     <tr class="second">
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th class="text-center"></th>
+                                        <th>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="dt1" type="checkbox" class="selectall" checked="">
+                                                <label for="dt1"></label>
+                                            </div>
+                                        </th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th><input type="text" class="form-control"></th>
+                                        <th class="text-center">
+                                            <button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i>
+                                        </th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox checkbox-primary">
-                                                <input id="dt1" type="checkbox" checked="">
-                                                <label for="dt1"></label>
-                                            </div>
-                                        </td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
-                                    </tr>
+                                    <!--<tr>-->
+                                        <!--<td>-->
+                                            <!--<div class="checkbox checkbox-primary">-->
+                                                <!--<input id="dt1" type="checkbox" checked="">-->
+                                                <!--<label for="dt1"></label>-->
+                                            <!--</div>-->
+                                        <!--</td>-->
+                                        <!--<td><input type="text" class="form-control"></td>-->
+                                        <!--<td><input type="text" class="form-control"></td>-->
+                                        <!--<td><input type="text" class="form-control"></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td></td>-->
+                                        <!--<td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>-->
+                                    <!--</tr>-->
                                     <tr>
                                         <td>
                                             <div class="checkbox checkbox-primary">
@@ -603,9 +610,9 @@
                     <form>
                         <div class="row detail-penerima">
                             <div class="col-xs-12">
-                                <p>Dinar Anjarmeta Putri</p>
-                                <p>Perumahan Taman Royal 2 Blok A no. 10 RT/RW 04/01.</p>
-                                <p>Cipondoh, Tangerang, Banten, 15114.</p>
+                                <p class="mb-0">Dinar Anjarmeta Putri</p>
+                                <p class="mb-0">Perumahan Taman Royal 2 Blok A no. 10 RT/RW 04/01.</p>
+                                <p class="mb-0">Cipondoh, Tangerang, Banten, 15114.</p>
                             </div>
                             <div class="col-xs-12 mt-10">
                                 <h4>Detail Paket</h4>
@@ -769,6 +776,19 @@
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+    });
+    $(function () {
+        $(".selectall").click(function () {
+            $('input[type="checkbox"]').attr('checked', this.checked);
+        });
+        $("input[type='checkbox']").click(function () {
+
+            if ($("input[type='checkbox']").length == $("input[type='checkbox']:checked").length) {
+                $(".selectall").attr("checked", "checked");
+            } else {
+                $(".selectall").removeAttr("checked");
+            }
+        });
     });
     $(document).ready(function () {
         $('#checkbox3').change(function () {

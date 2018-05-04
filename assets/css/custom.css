@@ -18,7 +18,7 @@ aside.main-sidebar{
     background: linear-gradient(to right, #2093ef, #2B80DB);
 }
 .skin-blue .main-header .logo, .skin-blue .main-sidebar{
-    background-color: #F8F8F8;
+    background-color: #fff;
 }
 .skin-blue .sidebar-menu > li > a{
     color: #595959;
@@ -65,7 +65,7 @@ aside.main-sidebar{
 }
 .skin-blue .sidebar-menu>li>.treeview-menu{
     margin: 0;
-    background-color: #ffffff;
+    background-color: #F8F8F8;
 }
 .skin-blue .sidebar-menu .treeview-menu>li.active>a{
     color: #2296F3;
