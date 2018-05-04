@@ -35,6 +35,12 @@
     margin-left: 15px;
     color: #ffffff;
 }
+.header-title.has-icon img{
+    margin-top: -9px;
+}
+.header-title.has-icon h3{
+    display: inline-block;
+}
 .ft-action{
     position: fixed;
     width: 100%;
@@ -757,6 +763,156 @@ table.dataTable thead tr th .btn-secondary,
 .listbox-address .buttons .btn.remove{
     left: -103px;
     top: 108px;
+}
+
+/*Steps Progress*/
+
+.steps {
+    margin: 75px auto;
+}
+.progressbar {
+    counter-reset: none;
+    color: #ffffff;
+}
+.progressbar li {
+    list-style-type: none;
+    width: 16%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.progressbar li:before {
+    width: 50px;
+    height: 50px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #2296F3;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.progressbar li.active:before{
+    background-color: #ED232B;
+}
+.progressbar li:after {
+    width: 50%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #2296F3;
+    top: 25px;
+    left: -25%;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: #ED232B;
+}
+.progressbar li p{
+    position: absolute;
+    width: 100%;
+    text-transform: none;
+}
+.progressbar li p:nth-child(1){
+    font-weight: 500;
+    top: -65px;
+    color: #484848;
+}
+.progressbar li p:nth-child(1) span{
+    font-size: 15px;
+}
+.progressbar li p:nth-child(2){
+    font-weight: 500;
+    color: #2296F3;
+    top: 17px;
+}
+.progressbar li.active p:nth-child(2) {
+    color: #ffffff;
+}
+.progressbar li.active:before {
+    border-color: #ED232B;
+}
+.progressbar li.active.pass + li:after {
+    background-color: #ED232B;
+}
+
+#detail-history .media .media-left img{
+    height: 36px;
+}
+#detail-history .card.shipment{
+    min-height: 132px;
+}
+#detail-history .card.package{
+    height: 172px;
+}
+#detail-history .card.package.service table{
+    height: 100%;
+}
+#detail-history .card.package.service p:first-child{
+    font-size: 40px;
+    font-weight: bold;
+}
+#detail-history table.subtotal{
+    width: 100%;
+}
+#detail-history table.subtotal tr td:first-child{
+    width: 110px;
+}
+#detail-history table.subtotal tr td:last-child{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.checkp .card{
+    box-shadow: 0 0 10px #c1c1c1;
+}
+.checkp .card .card-header{
+    background-color: #F4F5FA;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.checkp .card .card-header img{
+    width: 110px;
+}
+.checkp .card-body ul li{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.checkp .card-body ul li:first-child{
+    border-top: none;
+}
+.checkp .card-body ul li .media .media-left{
+    width: 45%;
+}
+
+#invoiceTable tbody tr td:last-child a{
+    border-right: none;
+}
+#invoiceTable tbody tr td:last-child a span{
+    border-bottom: solid 1px;
+}
+
+.invoice .header-section{
+    border-bottom: solid 2px #ededed;
+}
+.invoice .header-section img{
+    width: 200px;
+}
+.invoice .header-section p{
+    font-size: 10px;
+}
+.invoice .header-section .comp-name{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 @media (min-width: 768px){

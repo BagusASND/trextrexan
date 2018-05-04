@@ -135,6 +135,9 @@ aside.main-sidebar{
 .text-red {
     color: #c91920;
 }
+.text-green-light {
+    color: #5F9123;
+}
 .text-muted {
     color: rgba(119, 119, 119, .5);
 }
@@ -287,8 +290,8 @@ aside.main-sidebar{
 /*Padding*/
 .no-padding{padding: 0px!important;}
 .p-3{padding: 3px;}
-.p-5{padding: 5px;}
-.p-10{padding: 10px;}
+.p-5{padding: 5px!important;}
+.p-10{padding: 10px!important;}
 .p-15{padding: 15px;}
 .p-20{padding: 20px;}
 .p-25{padding: 25px;}
@@ -308,7 +311,7 @@ aside.main-sidebar{
 .pt-35{padding-top: 35px;}
 .pt-40{padding-top: 40px;}
 .pt-45{padding-top: 45px;}
-.pt-50{padding-top: 50px;}
+.pt-50{padding-top: 50px!important;}
 
 .pb-0{padding-bottom: 0px;}
 .pb-5{padding-bottom: 5px;}
@@ -320,7 +323,7 @@ aside.main-sidebar{
 .pb-35{padding-bottom: 35px;}
 .pb-40{padding-bottom: 40px;}
 .pb-45{padding-bottom: 45px;}
-.pb-50{padding-bottom: 50px;}
+.pb-50{padding-bottom: 50px!important;}
 .pb-60{padding-bottom: 60px;}
 .pb-70{padding-bottom: 70px;}
 
