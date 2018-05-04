@@ -160,7 +160,7 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="tab1">
                             <div class="row">
-                                <div class="col-xs-12 text-right">
+                                <div class="col-xs-12 text-right mt-30">
                                     <button class="btn btn-secondary mr-2" data-toggle="modal" data-target="#add-address"><img src="../../assets/img/new/ic-plus-white.png" class="ico-button"> Tambah Alamat Pelanggan</button>
                                     <a href="mass-upload.html"><button class="btn btn-secondary"><img src="../../assets/img/new/ic-upload-white.png" class="ico-button"> Mass Upload</button></a>
                                 </div>
@@ -178,31 +178,38 @@
                                             <th data-sortable="false">&nbsp;</th>
                                         </tr>
                                         <tr class="second">
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th class="text-center"></th>
+                                            <th>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="dt1" type="checkbox" class="selectall" checked="">
+                                                    <label for="dt1"></label>
+                                                </div>
+                                            </th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th class="text-center">
+                                                <button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i>
+                                            </th>
                                         </tr>
                                         </thead>
 
                                         <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox checkbox-primary">
-                                                    <input id="dt1" type="checkbox" checked="">
-                                                    <label for="dt1"></label>
-                                                </div>
-                                            </td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
-                                        </tr>
+                                        <!--<tr class="hidden">-->
+                                            <!--<td>-->
+                                                <!--<div class="checkbox checkbox-primary">-->
+                                                    <!--<input id="dt1" type="checkbox" checked="">-->
+                                                    <!--<label for="dt1"></label>-->
+                                                <!--</div>-->
+                                            <!--</td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>-->
+                                        <!--</tr>-->
                                         <tr>
                                             <td>
                                                 <div class="checkbox checkbox-primary">
@@ -989,25 +996,29 @@
                                             <th>Status</th>
                                             <th data-sortable="false">&nbsp;</th>
                                         </tr>
-                                        <tr class="third">
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th class="text-center"></th>
+                                        <tr class="second2">
+                                            <th>
+                                                &nbsp;
+                                            </th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th><input type="text" class="form-control"></th>
+                                            <th class="text-center">
+                                                &nbsp;
+                                            </th>
                                         </tr>
                                         </thead>
 
                                         <tbody>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
-                                        </tr>
+                                        <!--<tr class="hidden">-->
+                                            <!--<td>&nbsp;</td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td><input type="text" class="form-control"></td>-->
+                                            <!--<td> </td>-->
+                                        <!--</tr>-->
 
                                         <tr>
                                             <td>
@@ -2026,18 +2037,19 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
 
+    $(function () {
+        $(".selectall").click(function () {
+            $('input[type="checkbox"]').attr('checked', this.checked);
+        });
+        $("input[type='checkbox']").click(function () {
 
-/*    $(function () {
-        $('#example1').DataTable()
-        $('#example2').DataTable({
-            'paging'      : true,
-            'lengthChange': false,
-            'searching'   : true,
-            'ordering'    : true,
-            'info'        : true,
-            'autoWidth'   : false
-        })
-    })*/
+            if ($("input[type='checkbox']").length == $("input[type='checkbox']:checked").length) {
+                $(".selectall").attr("checked", "checked");
+            } else {
+                $(".selectall").removeAttr("checked");
+            }
+        });
+    });
 
     $(document).ready( function () {
         var table = $('#custTable').DataTable({
@@ -2062,29 +2074,29 @@
         // remove the row from the table
         table.row(indexes).remove().draw(false);
 
-
-        var table = $('#groupListTable').DataTable({
+    } );
+    $(document).ready( function () {
+        var table2 = $('#groupListTable').DataTable({
             orderCellsTop: true,   //move sorting to top header
             lengthChange: false,
             searching   : false
         });
 
         // Get the index of matching row.  Assumes only one match
-        var indexan = table.rows().eq( 0 ).filter( function (rowStatic) {    //check column 0 of each row for tradeMsg.message.coin
-            return table.cell( rowStatic, 1 ).data() === '<input type="text" class="form-control">' ? true : false;
+        var indexes2 = table2.rows().eq( 0 ).filter( function (rowStatic) {    //check column 0 of each row for tradeMsg.message.coin
+            return table2.cell( rowStatic, 1 ).data() === '<input type="text" class="form-control">' ? true : false;
         } );
 
         // grab the data from the row
-        var data = table.row(indexan).data();
+        var data2 = table2.row(indexes2).data();
 
         // populate the .third header with the data
-        for (j = 0; j < data.length; j++) {
-            $('.third').find('th').eq(j).html( data[j] );
+        for (i = 0; i < data2.length; i++) {
+            $('.second2').find('th').eq(i).html( data[i] );
         }
 
         // remove the row from the table
-        table.row(indexan).remove().draw(false);
-
+        table2.row(indexes2).remove().draw(false);
     } );
 
 </script>

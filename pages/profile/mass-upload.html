@@ -197,25 +197,27 @@
                                 </tr>
                                 <tr class="second">
                                     <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th class="text-center"></th>
+                                    <th><input type="text" class="form-control"></th>
+                                    <th><input type="text" class="form-control"></th>
+                                    <th><input type="text" class="form-control"></th>
+                                    <th><input type="text" class="form-control"></th>
+                                    <th><input type="text" class="form-control"></th>
+                                    <th class="text-center">
+                                        <button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i>
+                                    </th>
                                 </tr>
                                 </thead>
 
                                 <tbody>
-                                <tr>
-                                    <td>&nbsp;</td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>
-                                </tr>
+                                <!--<tr>-->
+                                    <!--<td>&nbsp;</td>-->
+                                    <!--<td><input type="text" class="form-control"></td>-->
+                                    <!--<td><input type="text" class="form-control"></td>-->
+                                    <!--<td><input type="text" class="form-control"></td>-->
+                                    <!--<td><input type="text" class="form-control"></td>-->
+                                    <!--<td><input type="text" class="form-control"></td>-->
+                                    <!--<td><button class="btn btn-secondary"><i class="fa fa-search"></i> Search</button> <i class="fa fa-trash text-primary cursor-pointer fs-20 ml-10"></i> </td>-->
+                                <!--</tr>-->
 
                                 <!--Isi table dibawah di comment sementara untuk tes data kosong-->
                                 <!-- <tr>
@@ -1069,6 +1071,19 @@
             input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
         });
     }( document, window, 0 ));
+    $(function () {
+        $(".selectall").click(function () {
+            $('input[type="checkbox"]').attr('checked', this.checked);
+        });
+        $("input[type='checkbox']").click(function () {
+
+            if ($("input[type='checkbox']").length == $("input[type='checkbox']:checked").length) {
+                $(".selectall").attr("checked", "checked");
+            } else {
+                $(".selectall").removeAttr("checked");
+            }
+        });
+    });
 
 </script>
 </body>
